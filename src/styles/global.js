@@ -1,5 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
+// const color = useRecoilValue(BackgroundColor);
+
 const GlobalStyle = createGlobalStyle`
 @font-face {
     font-family: 'MICEGothic Bold';
@@ -9,8 +11,12 @@ const GlobalStyle = createGlobalStyle`
 }
 body{
     box-sizing: border-box;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
     padding: 0;
+    color: ${(props) => props.color || "white"};
+    background: ${(props) => props.background || "black"};
     font-family: 'MICEGothic Bold';
     height: 100%;
       ::-webkit-scrollbar {
