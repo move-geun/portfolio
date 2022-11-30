@@ -31,6 +31,25 @@ const DesignContainer = styled.div`
     opacity: 0;
     transition: 2s;
     box-shadow: 5px -5px 5px -5px #333;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1);
+    transition: 0.5s;
+
+    &:hover {
+      transform: scale(1.2);
+      transition: 0.5s;
+      cursor: pointer;
+    }
+
+    img {
+      width: 60%;
+      height: 60%;
+      object-fit: cover;
+    }
   }
 
   .active {

@@ -43,11 +43,26 @@ const MainPage = () => {
       </div>
 
       <DesignContainer>
-        <div className="item" onClick={() => themaChange("black")}></div>
-        <div className="item" onClick={() => themaChange("tomato")}></div>
-        <div className="item" onClick={() => themaChange("blue")}></div>
-        <div className="item" onClick={() => themaChange("whitesmoke")}></div>
-        <div className="item" onClick={() => themaChange("tomato")}></div>
+        <div className="item">
+          <img src="../assets/git.png" alt="" />
+          <h2>About me</h2>
+        </div>
+        <div className="item">
+          <img src="../assets/onsikgo.png" alt="" />
+          <h2>Onsikgo Project</h2>
+        </div>
+        <div className="item">
+          <img src="../assets/mlbti.png" alt="" />
+          <h2>MLBTI Project</h2>
+        </div>
+        <div className="item">
+          <img src="../assets/d-station.png" alt="" />
+          <h2>D-station Project</h2>
+        </div>
+        <div className="item">
+          <img src="" alt="" />
+          <h2>Contact me</h2>
+        </div>
       </DesignContainer>
     </MainContainer>
   );
