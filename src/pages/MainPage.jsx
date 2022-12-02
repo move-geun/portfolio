@@ -1,5 +1,6 @@
 import React from "react";
 import { MainContainer, DesignContainer } from "./MainPage.style";
+import MyProfile from "../components/MyProfile";
 import { useEffect } from "react";
 import { BackgroundColor } from "../recoil/atoms";
 import { useRecoilState } from "recoil";
@@ -64,6 +65,7 @@ const MainPage = () => {
           <h2>Contact me</h2>
         </div>
       </DesignContainer>
+      <MyProfile></MyProfile>
     </MainContainer>
   );
 };
