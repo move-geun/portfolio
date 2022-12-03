@@ -46,11 +46,26 @@ const MyProfile = () => {
         </div>
       </div>
       <div className="skill">
-        <img src="./assets/html.png" alt="" />
-        <img src="./assets/python.png" alt="" />
-        <img src="./assets/vue.png" alt="" />
-        <img src="./assets/react.png" alt="" />
-        <img src="./assets/git.png" alt="" />
+        <div>
+          <img src="./assets/html.png" alt="" />
+          <div className="percent"></div>
+        </div>
+        <div>
+          <img src="./assets/python.png" alt="" />
+          <div className="percent"></div>
+        </div>
+        <div>
+          <img src="./assets/vue.png" alt="" />
+          <div className="percent"></div>
+        </div>
+        <div>
+          <img src="./assets/react.png" alt="" />
+          <div className="percent"></div>
+        </div>
+        <div>
+          <img src="./assets/git.png" alt="" />
+          <div className="percent"></div>
+        </div>
         <div>지라, slack, github, gitlab, js, django, css </div>
       </div>
     </MyProfileContainer>
