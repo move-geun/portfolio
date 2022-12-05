@@ -27,8 +27,10 @@ const DesignContainer = styled.div`
     height: 300px;
     border-radius: 30px;
     margin: 0 20px 20px 20px;
-    overflow-x: auto;
+    /* overflow-x: scroll; */
     opacity: 0;
+    transform: scale(1);
+    transition: 0.5s;
     transition: 2s;
     box-shadow: 5px -5px 5px -5px #333;
     color: black;
@@ -36,8 +38,6 @@ const DesignContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transform: scale(1);
-    transition: 0.5s;
 
     &:hover {
       transform: scale(1.2);

@@ -45,7 +45,7 @@ const MainPage = () => {
 
       <DesignContainer>
         <div className="item">
-          <img src="../assets/git.png" alt="" />
+          <img src="../assets/profile.png" alt="" />
           <h2>About me</h2>
         </div>
         <div className="item">
@@ -59,6 +59,10 @@ const MainPage = () => {
         <div className="item">
           <img src="../assets/d-station.png" alt="" />
           <h2>D-station Project</h2>
+        </div>
+        <div className="item">
+          <img src="../assets/d-station.png" alt="" />
+          <h2>Portfolio</h2>
         </div>
         <div className="item">
           <img src="" alt="" />
