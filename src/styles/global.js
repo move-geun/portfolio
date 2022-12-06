@@ -15,8 +15,8 @@ body{
     flex-direction: column;
     margin: 0 auto;
     padding: 0;
-    color: ${(props) => props.color || "white"};
-    background: ${(props) => props.background || "black"};
+    color: white;
+    background: #212121;
     font-family: 'MICEGothic Bold';
     height: 100%;
       ::-webkit-scrollbar {

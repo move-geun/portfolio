@@ -1,17 +1,10 @@
 import React from "react";
-import { MainContainer, DesignContainer } from "./MainPage.style";
+import { MainContainer, DesignContainer, Introduce } from "./MainPage.style";
 import MyProfile from "../components/MyProfile";
 import { useEffect } from "react";
-import { BackgroundColor } from "../recoil/atoms";
-import { useRecoilState } from "recoil";
+import Terminal from "../components/Terminal";
 
 const MainPage = () => {
-  const [background, setBackground] = useRecoilState(BackgroundColor);
-
-  const themaChange = (a) => {
-    setBackground(a);
-  };
-
   const options = {
     root: null,
     rootMargin: "0px",
@@ -30,18 +23,21 @@ const MainPage = () => {
 
   useEffect(() => {
     const titleList = document.querySelectorAll("div.item");
+    const intro = document.querySelectorAll("div.intro");
     titleList.forEach((el) => observer.observe(el));
+    intro.forEach((el) => observer.observe(el));
   });
 
   return (
     <MainContainer>
-      <div className="introduce">
+      <Introduce className="intro">
+        <Terminal></Terminal>
         <h1>Hello 🖐</h1>
         <h1>Im FrontEnd Devleoper, Donggeun Lee 🤗</h1>
         <h1>I'm trying for a better UI / UX 💻</h1>
         <h1>If you want to know more about me, </h1>
         <h1>Please scroll down! 👇👇</h1>
-      </div>
+      </Introduce>
 
       <DesignContainer>
         <div className="item">

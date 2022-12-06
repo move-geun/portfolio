@@ -1,15 +1,22 @@
 import styled from "styled-components";
 
-const MainContainer = styled.div`
-  .introduce {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* opacity: 0; */
-    transition: 1s;
-  }
+const MainContainer = styled.div``;
+
+const Introduce = styled.div`
+  height: 500px;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 10px;
+  opacity: 0;
+  transition: 1s;
+
   .active {
     opacity: 1;
   }
@@ -30,7 +37,6 @@ const DesignContainer = styled.div`
     /* overflow-x: scroll; */
     opacity: 0;
     transform: scale(1);
-    transition: 0.5s;
     transition: 2s;
     box-shadow: 5px -5px 5px -5px #333;
     color: black;
@@ -57,4 +63,4 @@ const DesignContainer = styled.div`
   }
 `;
 
-export { MainContainer, DesignContainer };
+export { MainContainer, Introduce, DesignContainer };
