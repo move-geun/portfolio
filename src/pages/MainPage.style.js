@@ -14,11 +14,83 @@ const Introduce = styled.div`
   justify-content: center;
   background-color: black;
   border-radius: 10px;
-  opacity: 0;
+  /* opacity: 0; */
   transition: 1s;
 
   .active {
     opacity: 1;
+  }
+`;
+
+const TextCase = styled.div`
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  margin: 15px 0;
+
+  div {
+    margin: 15px 0;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  .int1 {
+    width: 100%;
+    border-right: white;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 0.8s steps(22) forwards alternate;
+  }
+
+  .int2 {
+    width: 100%;
+    opacity: 0;
+    border-right: white;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 0.8s steps(22) forwards alternate;
+    animation-delay: 0.8s;
+  }
+  .int3 {
+    width: 100%;
+    opacity: 0;
+    border-right: white;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 0.8s steps(22) forwards alternate;
+    animation-delay: 1.6s;
+  }
+  .int4 {
+    width: 100%;
+    opacity: 0;
+    border-right: white;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 0.8s steps(22) forwards alternate;
+    animation-delay: 2.4s;
+  }
+  .int5 {
+    width: 100%;
+    opacity: 0;
+    border-right: white;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 0.8s steps(22) forwards alternate;
+    animation-delay: 3.2s;
   }
 `;
 
@@ -63,4 +135,4 @@ const DesignContainer = styled.div`
   }
 `;
 
-export { MainContainer, Introduce, DesignContainer };
+export { MainContainer, Introduce, TextCase, DesignContainer };

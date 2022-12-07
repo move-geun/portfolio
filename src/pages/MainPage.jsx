@@ -1,5 +1,10 @@
 import React from "react";
-import { MainContainer, DesignContainer, Introduce } from "./MainPage.style";
+import {
+  MainContainer,
+  DesignContainer,
+  TextCase,
+  Introduce,
+} from "./MainPage.style";
 import MyProfile from "../components/MyProfile";
 import { useEffect } from "react";
 import Terminal from "../components/Terminal";
@@ -32,11 +37,13 @@ const MainPage = () => {
     <MainContainer>
       <Introduce className="intro">
         <Terminal></Terminal>
-        <h1>Hello 🖐</h1>
-        <h1>Im FrontEnd Devleoper, Donggeun Lee 🤗</h1>
-        <h1>I'm trying for a better UI / UX 💻</h1>
-        <h1>If you want to know more about me, </h1>
-        <h1>Please scroll down! 👇👇</h1>
+        <TextCase>
+          <div className="int1">Hello 🖐</div>
+          <div className="int2">Im FrontEnd Devleoper, Donggeun Lee 🤗</div>
+          <div className="int3">I'm trying for a better UI / UX 💻</div>
+          <div className="int4">If you want to know more about me, </div>
+          <div className="int5">Click this folder or Text Title 👇👇</div>
+        </TextCase>
       </Introduce>
 
       <DesignContainer>
