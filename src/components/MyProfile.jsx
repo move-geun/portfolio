@@ -1,73 +1,114 @@
 import React from "react";
-import { MyProfileContainer } from "./MyProfile.style";
+import { MyProfileContainer, ChatBox } from "./MyProfile.style";
 
 const MyProfile = () => {
+  const title = "< About me / >";
   return (
     <MyProfileContainer>
-      <div className="introduce">
-        <img src="" alt="" />
+      <h3 className="title">{title}</h3>
+      <div className="aboutme">
+        <img className="profile" src="./assets/me.jpg" alt="" />
         <div>
-          <div>
-            <h2>안녕하세요</h2>
-            <h2>빠른 피드백을 좋아하는</h2>
-            <h2>Frontend 개발자 이동근입니다</h2>
-          </div>
-          <div>
-            <h2>
-              동아대학교에서 **경영학**을 전공으로 졸업하였고, 현재 **FrontEnd
-              개발**에 몰두하고 있습니다. 빠른 **피드백을 원동력 삼아**, **더
-              나은 결과물**을 만드는 것을 좋아합니다. 풍부한 UI와 효율적인 UX를
-              바탕으로, **내외부 고객 모두를 만족**시킬 서비스를 만들겠습니다.
-            </h2>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div className="profile">
-        <div className="pro_project">
-          프로젝트 경력 (총 6개월)
-          <ul>
-            <li>Onsikgo (2022.07.04 ~ 2022.08.19)</li>
-            <li>MLBTI (2022.08.22 ~ 2022.10.07)</li>
-            <li>D-station (2022.10.11 ~ 2022.11.18)</li>
-            <li>Portfolio (2022.12.02 ~ 2022.12.~)</li>
-          </ul>
+          <h3>안녕하세요</h3>
+          <h3>근거있는 기획으로,</h3>
+          <h3>고객 행동을 유도하는</h3>
+          <h3>Frontend 개발자 이동근입니다</h3>
         </div>
         <div>
+          <div className="pro_project">
+            프로젝트 경력 (총 6개월)
+            <ul>
+              <li>D-station (2022.10.11 ~ 2022.11.18)</li>
+              <li>MLBTI (2022.08.22 ~ 2022.10.07)</li>
+              <li>Onsikgo (2022.07.04 ~ 2022.08.19)</li>
+            </ul>
+          </div>
           <div>
-            학력
+            교육사항
+            <h4>삼성청년SW아카데미 -22.12 수료</h4>
             <h4>동아대학교 경영학과 -20.08 졸</h4>
             <h4>양산고등학교 -14.02 졸</h4>
-          </div>
-          <div>
-            기타
-            <h4>SSAFY 7기 과정 -22.12 진행 중</h4>
           </div>
         </div>
       </div>
       <div className="skill">
+        <h2>🛠 Skills </h2>
         <div>
-          <img src="./assets/html.png" alt="" />
-          <div className="percent"></div>
+          <h3>Frontend</h3>
+          <div className="skilllist">
+            <div>
+              <img src="./assets/html.png" alt="" />
+            </div>
+            <div>
+              <img src="./assets/css.png" alt="" />
+            </div>
+            <div>
+              <img src="./assets/js.png" alt="" />
+            </div>
+            <div>
+              <img src="./assets/react.png" alt="" />
+            </div>
+            <div>
+              <img src="./assets/redux.png" alt="" />
+            </div>
+            <div>
+              <img src="./assets/recoil.png" alt="" />
+            </div>
+            <div>
+              <img src="./assets/vue.png" alt="" />
+            </div>
+            <div>
+              <img src="./assets/three.png" alt="" />
+            </div>
+          </div>
         </div>
+
         <div>
-          <img src="./assets/python.png" alt="" />
-          <div className="percent"></div>
+          <h3>Backend</h3>
+          <div className="skilllist">
+            <div>
+              <img src="./assets/django.png" alt="" />
+            </div>
+            <div>
+              <img src="./assets/python.png" alt="" />
+            </div>
+          </div>
         </div>
+
         <div>
-          <img src="./assets/vue.png" alt="" />
-          <div className="percent"></div>
+          <h3>Tool</h3>
+          <div className="skilllist">
+            <div>
+              <img src="./assets/git.png" alt="" />
+            </div>
+            <div>
+              <img src="./assets/github.png" alt="" />
+            </div>
+            <div>
+              <img src="./assets/gitlab.png" alt="" />
+            </div>
+            <div>
+              <img src="./assets/jira.png" alt="" />
+            </div>
+            <div>
+              <img src="./assets/slack.jpg" alt="" />
+            </div>
+            <div>
+              <img src="./assets/figma.png" alt="" />
+            </div>
+          </div>
         </div>
-        <div>
-          <img src="./assets/react.png" alt="" />
-          <div className="percent"></div>
-        </div>
-        <div>
-          <img src="./assets/git.png" alt="" />
-          <div className="percent"></div>
-        </div>
-        <div>지라, slack, github, gitlab, js, django, css </div>
       </div>
+
+      <ChatBox>
+        <div className="hbox">
+          <h5 className="firsth">DonggeunLee : </h5>
+          <h5 className="sech"> ~/portfolio/aboutme/</h5>
+        </div>
+        <label htmlFor="navi">
+          <input type="text" id="navi" placeholder="onsikgo" autoFocus />
+        </label>
+      </ChatBox>
     </MyProfileContainer>
   );
 };

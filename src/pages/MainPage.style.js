@@ -27,7 +27,7 @@ const MainContainer = styled.div`
   }
 `;
 
-const Introduce = styled.div`
+const ContextBox = styled.div`
   height: 500px;
   width: 800px;
   margin: 0 auto;
@@ -197,4 +197,4 @@ const ChatBox = styled.div`
   }
 `;
 
-export { MainContainer, Introduce, TextCase, DesignContainer, ChatBox };
+export { MainContainer, ContextBox, TextCase, DesignContainer, ChatBox };

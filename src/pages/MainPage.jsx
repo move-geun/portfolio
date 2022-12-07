@@ -3,7 +3,7 @@ import {
   MainContainer,
   DesignContainer,
   TextCase,
-  Introduce,
+  ContextBox,
   ChatBox,
 } from "./MainPage.style";
 import MyProfile from "../components/MyProfile";
@@ -13,7 +13,7 @@ import Terminal from "../components/Terminal";
 const MainPage = () => {
   return (
     <MainContainer>
-      <Introduce>
+      <ContextBox>
         <Terminal></Terminal>
         <TextCase>
           <div className="int1">Hello 🖐</div>
@@ -60,12 +60,15 @@ const MainPage = () => {
             <h5 className="sech"> ~/portfoilo/</h5>
           </div>
           <label htmlFor="navi">
-            <input type="text" id="navi" autoFocus />
+            <input type="text" id="navi" placeholder="aboutme" autoFocus />
           </label>
         </ChatBox>
-      </Introduce>
+      </ContextBox>
 
-      <MyProfile></MyProfile>
+      <ContextBox>
+        <Terminal></Terminal>
+        <MyProfile></MyProfile>
+      </ContextBox>
     </MainContainer>
   );
 };
