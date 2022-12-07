@@ -1,6 +1,31 @@
 import styled from "styled-components";
 
-const MainContainer = styled.div``;
+const MainContainer = styled.div`
+  @keyframes typing {
+    from {
+      width: 0;
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  @keyframes viewer {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+`;
 
 const Introduce = styled.div`
   height: 500px;
@@ -32,24 +57,9 @@ const TextCase = styled.div`
     margin: 15px 0;
   }
 
-  @keyframes typing {
-    from {
-      width: 0;
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-  }
-
   .int1 {
     width: 100%;
+    opacity: 0;
     border-right: white;
     white-space: nowrap;
     overflow: hidden;
@@ -95,19 +105,32 @@ const TextCase = styled.div`
 `;
 
 const DesignContainer = styled.div`
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: row;
   align-items: center;
+  top: 50%;
+  opacity: 0;
+  animation: viewer 0.8s steps(22) forwards alternate;
+  animation-delay: 3.8s;
+
+  .itemCase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h5 {
+      margin: 0;
+    }
+  }
 
   .item {
     background-color: white;
-    min-width: 300px;
-    height: 300px;
+    width: 80px;
+    height: 80px;
     border-radius: 30px;
     margin: 0 20px 20px 20px;
-    /* overflow-x: scroll; */
-    opacity: 0;
     transform: scale(1);
     transition: 2s;
     box-shadow: 5px -5px 5px -5px #333;
@@ -130,9 +153,48 @@ const DesignContainer = styled.div`
     }
   }
 
-  .active {
-    opacity: 1;
+  .onsikgo {
+    background-color: rgb(140, 184, 131);
+  }
+
+  .dstation {
+    background-color: black;
   }
 `;
 
-export { MainContainer, Introduce, TextCase, DesignContainer };
+const ChatBox = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  bottom: 10%;
+  left: 3%;
+  background-color: black;
+  opacity: 0;
+  animation: viewer 0.8s steps(22) forwards alternate;
+  animation-delay: 4.2s;
+
+  .hbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    h5 {
+      margin-right: 5px;
+    }
+
+    .firsth {
+      color: #7cc62e;
+    }
+    .sech {
+      color: #647da9;
+    }
+  }
+  input {
+    background-color: black;
+    color: white;
+    min-width: 350px;
+  }
+`;
+
+export { MainContainer, Introduce, TextCase, DesignContainer, ChatBox };

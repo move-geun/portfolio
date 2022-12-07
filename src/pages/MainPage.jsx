@@ -4,38 +4,16 @@ import {
   DesignContainer,
   TextCase,
   Introduce,
+  ChatBox,
 } from "./MainPage.style";
 import MyProfile from "../components/MyProfile";
 import { useEffect } from "react";
 import Terminal from "../components/Terminal";
 
 const MainPage = () => {
-  const options = {
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.8,
-  };
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("active");
-      } else {
-        entry.target.classList.remove("active");
-      }
-    });
-  }, options);
-
-  useEffect(() => {
-    const titleList = document.querySelectorAll("div.item");
-    const intro = document.querySelectorAll("div.intro");
-    titleList.forEach((el) => observer.observe(el));
-    intro.forEach((el) => observer.observe(el));
-  });
-
   return (
     <MainContainer>
-      <Introduce className="intro">
+      <Introduce>
         <Terminal></Terminal>
         <TextCase>
           <div className="int1">Hello 🖐</div>
@@ -44,34 +22,49 @@ const MainPage = () => {
           <div className="int4">If you want to know more about me, </div>
           <div className="int5">Click this folder or Text Title 👇👇</div>
         </TextCase>
+        <DesignContainer>
+          <div className="itemCase">
+            <div className="item">
+              <img src="../assets/profile.png" alt="" />
+            </div>
+            <h5>About me</h5>
+          </div>
+          <div className="itemCase">
+            <div className="item onsikgo">
+              <img src="../assets/onsikgo.png" alt="" />
+            </div>
+            <h5>Onsikgo Project</h5>
+          </div>
+          <div className="itemCase">
+            <div className="item">
+              <img src="../assets/mlbti.png" alt="" />
+            </div>
+            <h5>MLBTI Project</h5>
+          </div>
+          <div className="itemCase">
+            <div className="item dstation">
+              <img src="../assets/d-station.png" alt="" />
+            </div>
+            <h5>D-station Project</h5>
+          </div>
+          <div className="itemCase">
+            <div className="item">
+              <img src="../assets/mail.png" alt="" />
+            </div>
+            <h5>Contact me</h5>
+          </div>
+        </DesignContainer>
+        <ChatBox>
+          <div className="hbox">
+            <h5 className="firsth">DonggeunLee : </h5>
+            <h5 className="sech"> ~/portfoilo/</h5>
+          </div>
+          <label htmlFor="navi">
+            <input type="text" id="navi" autoFocus />
+          </label>
+        </ChatBox>
       </Introduce>
 
-      <DesignContainer>
-        <div className="item">
-          <img src="../assets/profile.png" alt="" />
-          <h2>About me</h2>
-        </div>
-        <div className="item">
-          <img src="../assets/onsikgo.png" alt="" />
-          <h2>Onsikgo Project</h2>
-        </div>
-        <div className="item">
-          <img src="../assets/mlbti.png" alt="" />
-          <h2>MLBTI Project</h2>
-        </div>
-        <div className="item">
-          <img src="../assets/d-station.png" alt="" />
-          <h2>D-station Project</h2>
-        </div>
-        <div className="item">
-          <img src="../assets/d-station.png" alt="" />
-          <h2>Portfolio</h2>
-        </div>
-        <div className="item">
-          <img src="" alt="" />
-          <h2>Contact me</h2>
-        </div>
-      </DesignContainer>
       <MyProfile></MyProfile>
     </MainContainer>
   );
