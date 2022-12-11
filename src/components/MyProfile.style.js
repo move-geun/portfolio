@@ -18,6 +18,11 @@ const MyProfileContainer = styled.div`
 
   .title {
     color: #f1cb6b;
+    overflow: visible;
+    width: 100%;
+    opacity: 0;
+    white-space: nowrap;
+    animation: typing 1.2s steps(22) forwards alternate;
   }
 
   .profile {
@@ -70,7 +75,7 @@ const ChatBox = styled.div`
   background-color: black;
   opacity: 0;
   animation: viewer 0.8s steps(22) forwards alternate;
-  animation-delay: 4.2s;
+  animation-delay: 2s;
 
   .hbox {
     display: flex;

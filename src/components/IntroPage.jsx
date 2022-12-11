@@ -49,7 +49,7 @@ const IntroPage = () => {
           <h5 className="sech"> ~/portfoilo/</h5>
         </div>
         <label htmlFor="navi">
-          <input type="text" id="navi" placeholder="aboutme" autoFocus />
+          <input type="text" id="navi" placeholder="Aboutme" autoFocus />
         </label>
       </ChatBox>
     </>

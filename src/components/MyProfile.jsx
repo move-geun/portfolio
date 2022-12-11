@@ -122,7 +122,7 @@ const MyProfile = () => {
           <h5 className="sech"> ~/portfolio/aboutme/</h5>
         </div>
         <label htmlFor="navi">
-          <input type="text" id="navi" placeholder="onsikgo" autoFocus />
+          <input type="text" id="navi" placeholder="Onsikgo" />
         </label>
       </ChatBox>
     </MyProfileContainer>
