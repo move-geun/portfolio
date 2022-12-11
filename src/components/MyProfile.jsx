@@ -33,7 +33,7 @@ const MyProfile = () => {
       slideRef.current.style.transition = "0.5s ease";
       slideRef.current.style.transform = "translateX(0)";
     } else {
-      slideRef.current.style.transition = "0.5s ease-in-out";
+      slideRef.current.transition = "0.5s ease-in-out";
       slideRef.current.style.transform = `translateX(-${200 * count}px)`;
     }
   };
