@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
 const SliderContainer = styled.div`
+  width: 750px;
+
   .slideWrap {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
   }
 

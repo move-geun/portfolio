@@ -43,6 +43,11 @@ const FrontSlider = ({ count, slideRef }) => {
       src: "./assets/three.png",
       alt: "Three.js",
     },
+    {
+      id: 10,
+      src: "./assets/html.png",
+      alt: "HTML",
+    },
   ];
   return (
     <SliderContainer>

@@ -30,9 +30,11 @@ const MyProfile = () => {
 
   const handleSlider = (count) => {
     if (count === 2) {
+      slideRef.current.style.transition = "0.5s ease";
       slideRef.current.style.transform = "translateX(0)";
     } else {
-      slideRef.current.style.transform = `translateX(-${100 * count}px)`;
+      slideRef.current.style.transition = "0.5s ease-in-out";
+      slideRef.current.style.transform = `translateX(-${200 * count}px)`;
     }
   };
 
@@ -74,11 +76,7 @@ const MyProfile = () => {
         <h2 style={{ color: "#FFC686" }}>🛠 Skills </h2>
         <div>
           <h3>Frontend</h3>
-          <FrontSlider
-            slideRef={slideRef}
-            count={count}
-            // handleCount={handleCount}
-          ></FrontSlider>
+          <FrontSlider slideRef={slideRef} count={count}></FrontSlider>
         </div>
 
         <div>
