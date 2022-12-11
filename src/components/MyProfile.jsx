@@ -1,22 +1,32 @@
 import React from "react";
-import { MyProfileContainer, ChatBox } from "./MyProfile.style";
+import {
+  MyProfileContainer,
+  ChatBox,
+  FlexCol,
+  FlexRow,
+} from "./MyProfile.style";
 
 const MyProfile = () => {
   const title = "< About me / >";
+
   return (
     <MyProfileContainer>
       <h3 className="title">{title}</h3>
       <div className="aboutme">
         <img className="profile" src="./assets/me.jpg" alt="" />
-        <div>
-          <h3>안녕하세요</h3>
-          <h3>근거있는 기획으로,</h3>
-          <h3>고객 행동을 유도하는</h3>
-          <h3>Frontend 개발자 이동근입니다</h3>
+        <div className="sayHello">
+          <div>안녕하세요</div>
+          <FlexRow>
+            <div style={{ color: "#99CCCC" }}>근거있는 기획</div>으로,
+          </FlexRow>
+          <FlexRow>
+            <div style={{ color: "#FFDDDD" }}>고객 행동을 유도</div>하는
+          </FlexRow>
+          <div>Frontend 개발자 이동근입니다</div>
         </div>
-        <div>
-          <div className="pro_project">
-            프로젝트 경력 (총 6개월)
+        <FlexCol>
+          <div>
+            <div style={{ color: "#f1cb6b" }}>프로젝트 경력 (총 6개월)</div>
             <ul>
               <li>D-station (2022.10.11 ~ 2022.11.18)</li>
               <li>MLBTI (2022.08.22 ~ 2022.10.07)</li>
@@ -24,15 +34,17 @@ const MyProfile = () => {
             </ul>
           </div>
           <div>
-            교육사항
-            <h4>삼성청년SW아카데미 -22.12 수료</h4>
-            <h4>동아대학교 경영학과 -20.08 졸</h4>
-            <h4>양산고등학교 -14.02 졸</h4>
+            <div style={{ color: "#f1cb6b" }}>교육사항</div>
+            <ul>
+              <li>삼성청년SW아카데미 -22.12 수료</li>
+              <li>동아대학교 경영학과 -20.08 졸</li>
+              <li>양산고등학교 -14.02 졸</li>
+            </ul>
           </div>
-        </div>
+        </FlexCol>
       </div>
       <div className="skill">
-        <h2>🛠 Skills </h2>
+        <h2 style={{ color: "#FFC686" }}>🛠 Skills </h2>
         <div>
           <h3>Frontend</h3>
           <div className="skilllist">

@@ -30,6 +30,14 @@ const MyProfileContainer = styled.div`
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
+
+    .sayHello {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 100%;
+      font-size: 1.3rem;
+    }
   }
   .skill {
     display: flex;
@@ -86,4 +94,21 @@ const ChatBox = styled.div`
   }
 `;
 
-export { MyProfileContainer, ChatBox };
+const FlexRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`;
+
+const FlexCol = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  li {
+    margin: 5px 0px;
+  }
+`;
+
+export { MyProfileContainer, ChatBox, FlexRow, FlexCol };
