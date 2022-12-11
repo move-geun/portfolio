@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
+import FrontSlider from "./FrontSlider";
 import {
   MyProfileContainer,
   ChatBox,
@@ -8,6 +9,32 @@ import {
 
 const MyProfile = () => {
   const title = "< About me / >";
+  const slideRef = useRef();
+  const [count, setCount] = useState(1);
+
+  useEffect(() => {
+    const interval = setTimeout(() => {
+      setCount(() => {
+        if (count < 2) {
+          setCount(count + 1);
+        } else {
+          setCount(1);
+        }
+      });
+
+      handleSlider(count);
+
+      return () => clearTimeout(interval);
+    }, 2000);
+  });
+
+  const handleSlider = (count) => {
+    if (count === 2) {
+      slideRef.current.style.transform = "translateX(0)";
+    } else {
+      slideRef.current.style.transform = `translateX(-${100 * count}px)`;
+    }
+  };
 
   return (
     <MyProfileContainer>
@@ -47,32 +74,11 @@ const MyProfile = () => {
         <h2 style={{ color: "#FFC686" }}>🛠 Skills </h2>
         <div>
           <h3>Frontend</h3>
-          <div className="skilllist">
-            <div>
-              <img src="./assets/html.png" alt="" />
-            </div>
-            <div>
-              <img src="./assets/css.png" alt="" />
-            </div>
-            <div>
-              <img src="./assets/js.png" alt="" />
-            </div>
-            <div>
-              <img src="./assets/react.png" alt="" />
-            </div>
-            <div>
-              <img src="./assets/redux.png" alt="" />
-            </div>
-            <div>
-              <img src="./assets/recoil.png" alt="" />
-            </div>
-            <div>
-              <img src="./assets/vue.png" alt="" />
-            </div>
-            <div>
-              <img src="./assets/three.png" alt="" />
-            </div>
-          </div>
+          <FrontSlider
+            slideRef={slideRef}
+            count={count}
+            // handleCount={handleCount}
+          ></FrontSlider>
         </div>
 
         <div>
