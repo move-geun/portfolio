@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const OnskigoContainer = styled.div`
+const ProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -61,4 +61,4 @@ const ChatBox = styled.div`
   }
 `;
 
-export { OnskigoContainer, ChatBox };
+export { ProjectContainer, ChatBox };

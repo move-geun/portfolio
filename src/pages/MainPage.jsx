@@ -2,9 +2,9 @@ import React from "react";
 import { MainContainer, ContextBox } from "./MainPage.style";
 import IntroPage from "../components/IntroPage";
 import MyProfile from "../components/MyProfile";
-import Onsikgo from "../components/Onsikgo";
-import { useEffect } from "react";
 import Terminal from "../components/Terminal";
+import ProjectPage from "../components/ProjectPage";
+import { useEffect } from "react";
 
 const MainPage = () => {
   return (
@@ -21,7 +21,7 @@ const MainPage = () => {
 
       <ContextBox>
         <Terminal></Terminal>
-        <Onsikgo></Onsikgo>
+        <ProjectPage></ProjectPage>
       </ContextBox>
     </MainContainer>
   );
