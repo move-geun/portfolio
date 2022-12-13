@@ -4,6 +4,7 @@ import IntroPage from "../components/IntroPage";
 import MyProfile from "../components/MyProfile";
 import Terminal from "../components/Terminal";
 import ProjectPage from "../components/ProjectPage";
+import { onsikgo, mlbti, dstation } from "../components/Project";
 import { useEffect } from "react";
 
 const MainPage = () => {
@@ -21,7 +22,7 @@ const MainPage = () => {
 
       <ContextBox>
         <Terminal></Terminal>
-        <ProjectPage></ProjectPage>
+        <ProjectPage project={mlbti}></ProjectPage>
       </ContextBox>
     </MainContainer>
   );

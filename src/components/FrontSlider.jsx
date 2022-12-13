@@ -5,48 +5,43 @@ const FrontSlider = ({ count, slideRef }) => {
   const sliderlist = [
     {
       id: 1,
-      src: "./assets/html.png",
+      src: "./assets/skills/html.png",
       alt: "HTML",
     },
     {
       id: 2,
-      src: "./assets/css.png",
+      src: "./assets/skills/css.png",
       alt: "CSS",
     },
     {
       id: 3,
-      src: "./assets/js.png",
+      src: "./assets/skills/js.png",
       alt: "JS",
     },
     {
       id: 4,
-      src: "./assets/react.png",
+      src: "./assets/skills/react.png",
       alt: "React",
     },
     {
       id: 5,
-      src: "./assets/redux.png",
+      src: "./assets/skills/redux.png",
       alt: "Redux",
     },
     {
       id: 6,
-      src: "./assets/recoil.png",
+      src: "./assets/skills/recoil.png",
       alt: "Recoil",
     },
     {
       id: 7,
-      src: "./assets/vue.png",
+      src: "./assets/skills/vue.png",
       alt: "Vue",
     },
     {
       id: 8,
-      src: "./assets/three.png",
+      src: "./assets/skills/three.png",
       alt: "Three.js",
-    },
-    {
-      id: 10,
-      src: "./assets/html.png",
-      alt: "HTML",
     },
   ];
   return (

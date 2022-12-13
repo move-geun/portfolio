@@ -26,6 +26,30 @@ const ProjectContainer = styled.div`
   }
 `;
 
+const ProjectBox = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  div {
+    margin: 3px;
+  }
+  p {
+    margin: 5px;
+  }
+
+  .titlebox {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .subtitlebox {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+`;
+
 const ChatBox = styled.div`
   display: flex;
   flex-direction: row;
@@ -61,4 +85,11 @@ const ChatBox = styled.div`
   }
 `;
 
-export { ProjectContainer, ChatBox };
+const FlexRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export { ProjectContainer, ProjectBox, FlexRow, ChatBox };

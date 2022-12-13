@@ -83,10 +83,10 @@ const MyProfile = () => {
           <h3>Backend</h3>
           <div className="skilllist">
             <div>
-              <img src="./assets/django.png" alt="" />
+              <img src="./assets/skills/django.png" alt="" />
             </div>
             <div>
-              <img src="./assets/python.png" alt="" />
+              <img src="./assets/skills/python.png" alt="" />
             </div>
           </div>
         </div>
@@ -95,22 +95,22 @@ const MyProfile = () => {
           <h3>Tool</h3>
           <div className="skilllist">
             <div>
-              <img src="./assets/git.png" alt="" />
+              <img src="./assets/skills/git.png" alt="" />
             </div>
             <div>
-              <img src="./assets/github.png" alt="" />
+              <img src="./assets/skills/github.png" alt="" />
             </div>
             <div>
-              <img src="./assets/gitlab.png" alt="" />
+              <img src="./assets/skills/gitlab.png" alt="" />
             </div>
             <div>
-              <img src="./assets/jira.png" alt="" />
+              <img src="./assets/skills/jira.png" alt="" />
             </div>
             <div>
-              <img src="./assets/slack.jpg" alt="" />
+              <img src="./assets/skills/slack.jpg" alt="" />
             </div>
             <div>
-              <img src="./assets/figma.png" alt="" />
+              <img src="./assets/skills/figma.png" alt="" />
             </div>
           </div>
         </div>
