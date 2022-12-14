@@ -22,7 +22,17 @@ const MainPage = () => {
 
       <ContextBox>
         <Terminal></Terminal>
+        <ProjectPage project={onsikgo}></ProjectPage>
+      </ContextBox>
+
+      <ContextBox>
+        <Terminal></Terminal>
         <ProjectPage project={mlbti}></ProjectPage>
+      </ContextBox>
+
+      <ContextBox>
+        <Terminal></Terminal>
+        <ProjectPage project={dstation}></ProjectPage>
       </ContextBox>
     </MainContainer>
   );

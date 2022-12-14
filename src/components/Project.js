@@ -1,15 +1,17 @@
 const onsikgo = {
+  name: "onsikgo",
   title: "Onsikgo",
   subtitle: "소상공인을 위한 마감할인 서비스",
   date: "2022.07.04 ~ 2022.08.19",
   member: 6,
   next: "MLBTI",
-  gifcount: 1,
+  gifcount: 9,
   content: `
                 `,
   role: "",
 };
 const mlbti = {
+  name: "mlbti",
   title: "MLBTI",
   subtitle: "빅데이터 분석을 활용한 mlb 경기 예측, 시뮬레이션 서비스",
   date: "2022.08.22 ~ 2022.10.07",
@@ -22,6 +24,7 @@ const mlbti = {
   role: "",
 };
 const dstation = {
+  name: "dstation",
   title: "D-Station",
   subtitle: "초보 개발자를 위한 학습 로드맵 서비스",
   date: "2022.10.11 ~ 2022.11.18",

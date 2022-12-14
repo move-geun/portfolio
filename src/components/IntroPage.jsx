@@ -14,31 +14,31 @@ const IntroPage = () => {
       <DesignContainer>
         <div className="itemCase">
           <div className="item">
-            <img src="./assets/profile.png" alt="" />
+            <img src="./assets/skills/profile.png" alt="" />
           </div>
           <h5>About me</h5>
         </div>
         <div className="itemCase">
           <div className="item onsikgo">
-            <img src="./assets/onsikgo.png" alt="" />
+            <img src="./assets/skills/onsikgo.png" alt="" />
           </div>
           <h5>Onsikgo Project</h5>
         </div>
         <div className="itemCase">
           <div className="item">
-            <img src="./assets/mlbti.png" alt="" />
+            <img src="./assets/skills/mlbti.png" alt="" />
           </div>
           <h5>MLBTI Project</h5>
         </div>
         <div className="itemCase">
           <div className="item dstation">
-            <img src="./assets/d-station.png" alt="" />
+            <img src="./assets/skills/d-station.png" alt="" />
           </div>
           <h5>D-station Project</h5>
         </div>
         <div className="itemCase">
           <div className="item">
-            <img src="./assets/mail.png" alt="" />
+            <img src="./assets/skills/mail.png" alt="" />
           </div>
           <h5>Contact me</h5>
         </div>
@@ -49,7 +49,6 @@ const IntroPage = () => {
           <h5 className="sech"> ~/portfoilo/</h5>
         </div>
         <label htmlFor="navi">
-          {/* <input type="text" id="navi" placeholder="Aboutme" autoFocus /> */}
           <input type="text" id="navi" placeholder="Aboutme" autoFocus />
         </label>
       </ChatBox>

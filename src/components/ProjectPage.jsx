@@ -44,10 +44,11 @@ const ProjectPage = ({ project }) => {
                 for (let i = 0; i <= project.gifcount; i++) {
                   arr.push(
                     <img
+                      key={i}
                       className="project-png"
                       src={
                         process.env.PUBLIC_URL +
-                        `/assets/images/${project.name}/${i}.gif`
+                        `/assets/${project.name}/${i}.gif`
                       }
                       alt="gif"
                     />
@@ -63,6 +64,7 @@ const ProjectPage = ({ project }) => {
                 for (let i = 0; i <= project.gifcount; i++) {
                   arr.push(
                     <div
+                      key={i}
                       className="carousel-btn"
                       id={`btn${project.name}${i}`}
                       onClick={() => changeGif(i)}

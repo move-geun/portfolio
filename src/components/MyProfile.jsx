@@ -42,7 +42,7 @@ const MyProfile = () => {
     <MyProfileContainer>
       <h3 className="title">{title}</h3>
       <div className="aboutme">
-        <img className="profile" src="./assets/me.jpg" alt="" />
+        <img className="profile" src="./assets/skills/me.jpg" alt="" />
         <div className="sayHello">
           <div>안녕하세요</div>
           <FlexRow>
