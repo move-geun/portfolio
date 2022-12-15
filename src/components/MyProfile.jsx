@@ -43,31 +43,31 @@ const MyProfile = () => {
     }
   };
 
-  useEffect(() => {
-    const interval = setTimeout(() => {
-      setCount(() => {
-        if (count < 2) {
-          setCount(count + 1);
-        } else {
-          setCount(1);
-        }
-      });
+  // useEffect(() => {
+  //   const interval = setTimeout(() => {
+  //     setCount(() => {
+  //       if (count < 2) {
+  //         setCount(count + 1);
+  //       } else {
+  //         setCount(1);
+  //       }
+  //     });
 
-      handleSlider(count);
+  //     handleSlider(count);
 
-      return () => clearTimeout(interval);
-    }, 2000);
-  });
+  //     return () => clearTimeout(interval);
+  //   }, 2000);
+  // });
 
-  const handleSlider = (count) => {
-    if (count === 2) {
-      slideRef.current.style.transition = "0.5s ease";
-      slideRef.current.style.transform = "translateX(0)";
-    } else {
-      slideRef.current.transition = "0.5s ease-in-out";
-      slideRef.current.style.transform = `translateX(-${200 * count}px)`;
-    }
-  };
+  // const handleSlider = (count) => {
+  //   if (count === 2) {
+  //     slideRef.current.style.transition = "0.5s ease";
+  //     slideRef.current.style.transform = "translateX(0)";
+  //   } else {
+  //     slideRef.current.transition = "0.5s ease-in-out";
+  //     slideRef.current.style.transform = `translateX(-${200 * count}px)`;
+  //   }
+  // };
 
   return (
     <MyProfileContainer>

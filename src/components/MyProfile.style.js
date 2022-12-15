@@ -35,6 +35,9 @@ const MyProfileContainer = styled.div`
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
+    opacity: 0;
+    animation: viewer 0.3s steps(22) forwards alternate;
+    animation-delay: 0.1s;
 
     .sayHello {
       display: flex;
@@ -48,8 +51,11 @@ const MyProfileContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    opacity: 0;
     align-items: center;
     text-align: center;
+    animation: viewer 0.3s steps(22) forwards alternate;
+    animation-delay: 0.1s;
 
     img {
       width: 100px;

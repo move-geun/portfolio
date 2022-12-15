@@ -6,6 +6,7 @@ import Terminal from "./Terminal";
 
 const Navigator = () => {
   const [nowPage, setNowPage] = useRecoilState(NowPage);
+
   const goIntro = () => {
     setNowPage("intro");
   };

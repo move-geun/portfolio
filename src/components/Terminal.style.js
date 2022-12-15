@@ -34,11 +34,6 @@ const TerminalContainer = styled.div`
     .greenone {
       background-color: #77bf47;
     }
-
-    .title {
-      font-size: h3;
-      color: white;
-    }
   }
 `;
 
