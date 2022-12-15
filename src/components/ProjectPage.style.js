@@ -160,9 +160,12 @@ const FlexRow = styled.div`
   .project-png {
     width: 100%;
     height: 100%;
-    margin-right: 20px;
     object-fit: cover;
     /* background-size: cover; */
+  }
+
+  .onsikgo {
+    margin-right: 20px;
   }
 `;
 

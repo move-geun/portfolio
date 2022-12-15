@@ -55,9 +55,15 @@ const ProjectPage = ({ project }) => {
 
     carouselRef.current.style.transition = "all 0.6s ease-in-out";
     // 온식고일 떄만 또 조정하기
-    carouselRef.current.style.transform = `translateX(-${
-      currentCnt * wid + 15
-    }px)`;
+    if (nowPage === "onsikgo") {
+      carouselRef.current.style.transform = `translateX(-${
+        currentCnt * wid + 16.9
+      }px)`;
+    } else {
+      carouselRef.current.style.transform = `translateX(-${
+        currentCnt * wid
+      }px)`;
+    }
   }, [currentCnt, project, carouselRef]);
 
   const title = `< Project_${project.title} / >`;
@@ -77,26 +83,39 @@ const ProjectPage = ({ project }) => {
               {(() => {
                 let arr = [];
                 for (let i = 0; i <= project.gifcount; i++) {
-                  arr.push(
-                    <img
-                      key={i}
-                      className="project-png"
-                      src={
-                        process.env.PUBLIC_URL +
-                        `/assets/${project.name}/${i}.gif`
-                      }
-                      alt="gif"
-                    />
-                  );
+                  if (nowPage === "onsikgo") {
+                    arr.push(
+                      <img
+                        key={i}
+                        className="project-png onsikgo"
+                        src={
+                          process.env.PUBLIC_URL +
+                          `/assets/${project.name}/${i}.gif`
+                        }
+                        alt="gif"
+                      />
+                    );
+                  } else {
+                    arr.push(
+                      <img
+                        key={i}
+                        className="project-png"
+                        src={
+                          process.env.PUBLIC_URL +
+                          `/assets/${project.name}/${i}.gif`
+                        }
+                        alt="gif"
+                      />
+                    );
+                  }
                 }
                 return arr;
               })()}
             </div>
-            {/* 온식고일때는 조건 넣어서 버튼 5개만 */}
             <div className="carousel-buttons">
               {(() => {
                 let arr = [];
-                for (let i = 0; i <= project.gifcount; i++) {
+                for (let i = 0; i <= project.btncount; i++) {
                   arr.push(
                     <div
                       key={i}
@@ -119,7 +138,7 @@ const ProjectPage = ({ project }) => {
       <ChatBox>
         <div className="hbox">
           <h5 className="firsth">DonggeunLee : </h5>
-          <h5 className="sech"> ~/portfolio/Project/${project.title}/</h5>
+          <h5 className="sech"> ~/portfolio/Project/{project.title}/</h5>
         </div>
         <label htmlFor="navi">
           <input
