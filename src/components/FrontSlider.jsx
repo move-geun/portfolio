@@ -5,42 +5,42 @@ const FrontSlider = ({ count, slideRef }) => {
   const sliderlist = [
     // {
     //   id: 1,
-    //   src: "./assets/skills/html.png",
+    //   src:  process.env.PUBLIC_URL +"/assets/skills/html.png",
     //   alt: "HTML",
     // },
     // {
     //   id: 2,
-    //   src: "./assets/skills/css.png",
+    //   src:  process.env.PUBLIC_URL +"/assets/skills/css.png",
     //   alt: "CSS",
     // },
     {
       id: 1,
-      src: "./assets/skills/js.png",
+      src: process.env.PUBLIC_URL + "/assets/skills/js.png",
       alt: "JS",
     },
     {
       id: 2,
-      src: "./assets/skills/react.png",
+      src: process.env.PUBLIC_URL + "/assets/skills/react.png",
       alt: "React",
     },
     {
       id: 3,
-      src: "./assets/skills/redux.png",
+      src: process.env.PUBLIC_URL + "/assets/skills/redux.png",
       alt: "Redux",
     },
     {
       id: 4,
-      src: "./assets/skills/recoil.png",
+      src: process.env.PUBLIC_URL + "/assets/skills/recoil.png",
       alt: "Recoil",
     },
     {
       id: 5,
-      src: "./assets/skills/vue.png",
+      src: process.env.PUBLIC_URL + "/assets/skills/vue.png",
       alt: "Vue",
     },
     {
       id: 6,
-      src: "./assets/skills/three.png",
+      src: process.env.PUBLIC_URL + "/assets/skills/three.png",
       alt: "Three.js",
     },
   ];

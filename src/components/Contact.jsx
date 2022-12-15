@@ -41,7 +41,10 @@ const Contact = () => {
         <div className="item">
           <div className="imgcase">
             <div className="imgbox">
-              <img src="./assets/skills/email.png" alt="" />
+              <img
+                src={process.env.PUBLIC_URL + "/assets/skills/email.png"}
+                alt=""
+              />
             </div>
             <div className="imgtitle">Mail</div>
           </div>
@@ -50,7 +53,10 @@ const Contact = () => {
         <div className="item">
           <div className="imgcase">
             <div className="imgbox">
-              <img src="./assets/skills/call.png" alt="" />
+              <img
+                src={process.env.PUBLIC_URL + "/assets/skills/call.png"}
+                alt=""
+              />
             </div>
             <div className="imgtitle">Call</div>
           </div>
@@ -59,7 +65,10 @@ const Contact = () => {
         <div className="item">
           <div className="imgcase">
             <div className="imgbox">
-              <img src="./assets/skills/github.png" alt="" />
+              <img
+                src={process.env.PUBLIC_URL + "/assets/skills/github.png"}
+                alt=""
+              />
             </div>
             <div className="imgtitle">Github</div>
           </div>

@@ -73,7 +73,11 @@ const MyProfile = () => {
     <MyProfileContainer>
       <h3 className="title">{title}</h3>
       <div className="aboutme">
-        <img className="profile" src="./assets/skills/me.jpg" alt="" />
+        <img
+          className="profile"
+          src={process.env.PUBLIC_URL + "/assets/skills/me.jpg"}
+          alt=""
+        />
         <div className="sayHello">
           <div>안녕하세요</div>
           <FlexRow>
@@ -114,10 +118,16 @@ const MyProfile = () => {
           <h3>Backend</h3>
           <div className="skilllist">
             <div>
-              <img src="./assets/skills/django.png" alt="" />
+              <img
+                src={process.env.PUBLIC_URL + "/assets/skills/django.png"}
+                alt=""
+              />
             </div>
             <div>
-              <img src="./assets/skills/python.png" alt="" />
+              <img
+                src={process.env.PUBLIC_URL + "/assets/skills/python.png"}
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -126,22 +136,40 @@ const MyProfile = () => {
           <h3>Tool</h3>
           <div className="skilllist">
             <div>
-              <img src="./assets/skills/git.png" alt="" />
+              <img
+                src={process.env.PUBLIC_URL + "/assets/skills/git.png"}
+                alt=""
+              />
             </div>
             <div>
-              <img src="./assets/skills/github.png" alt="" />
+              <img
+                src={process.env.PUBLIC_URL + "/assets/skills/github.png"}
+                alt=""
+              />
             </div>
             <div>
-              <img src="./assets/skills/gitlab.png" alt="" />
+              <img
+                src={process.env.PUBLIC_URL + "/assets/skills/gitlab.png"}
+                alt=""
+              />
             </div>
             <div>
-              <img src="./assets/skills/jira.png" alt="" />
+              <img
+                src={process.env.PUBLIC_URL + "/assets/skills/jira.png"}
+                alt=""
+              />
             </div>
             <div>
-              <img src="./assets/skills/slack.jpg" alt="" />
+              <img
+                src={process.env.PUBLIC_URL + "/assets/skills/slack.jpg"}
+                alt=""
+              />
             </div>
             <div>
-              <img src="./assets/skills/figma.png" alt="" />
+              <img
+                src={process.env.PUBLIC_URL + "/assets/skills/figma.png"}
+                alt=""
+              />
             </div>
           </div>
         </div>

@@ -22,7 +22,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://move-geun.github.io/portfolio/index.html",
+  "homepage": "https://move-geun.github.io/portfolio/",
   "eslintConfig": {
     "extends": [
       "react-app",

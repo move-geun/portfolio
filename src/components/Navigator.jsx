@@ -30,37 +30,55 @@ const Navigator = () => {
       <Terminal></Terminal>
       <div className="itemCase marbox" onClick={goIntro}>
         <div className="item hello">
-          <img src="./assets/skills/hello.png" alt="" />
+          <img
+            src={process.env.PUBLIC_URL + "/assets/skills/hello.png"}
+            alt=""
+          />
         </div>
         <h6>Intro</h6>
       </div>
       <div className="itemCase" onClick={goProfile}>
         <div className="item">
-          <img src="./assets/skills/profile.png" alt="" />
+          <img
+            src={process.env.PUBLIC_URL + "/assets/skills/profile.png"}
+            alt=""
+          />
         </div>
         <h6>About me</h6>
       </div>
       <div className="itemCase" onClick={goOnsikgo}>
         <div className="item onsikgo">
-          <img src="./assets/skills/onsikgo.png" alt="" />
+          <img
+            src={process.env.PUBLIC_URL + "/assets/skills/onsikgo.png"}
+            alt=""
+          />
         </div>
         <h6>Onsikgo Project</h6>
       </div>
       <div className="itemCase" onClick={goMlbti}>
         <div className="item">
-          <img src="./assets/skills/mlbti.png" alt="" />
+          <img
+            src={process.env.PUBLIC_URL + "/assets/skills/mlbti.png"}
+            alt=""
+          />
         </div>
         <h6>MLBTI Project</h6>
       </div>
       <div className="itemCase" onClick={goDstation}>
         <div className="item dstation">
-          <img src="./assets/skills/d-station.png" alt="" />
+          <img
+            src={process.env.PUBLIC_URL + "/assets/skills/d-station.png"}
+            alt=""
+          />
         </div>
         <h6>D-station Project</h6>
       </div>
       <div className="itemCase" onClick={goContact}>
         <div className="item">
-          <img src="./assets/skills/mail.png" alt="" />
+          <img
+            src={process.env.PUBLIC_URL + "/assets/skills/mail.png"}
+            alt=""
+          />
         </div>
         <h6>Contact me</h6>
       </div>
