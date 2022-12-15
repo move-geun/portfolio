@@ -12,6 +12,7 @@ import { NowPage } from "../recoil/atoms";
 import { useEffect } from "react";
 
 const MainPage = () => {
+  // io 업데이트 기원 commit
   const [nowPage, setNowPage] = useRecoilState(NowPage);
   useEffect(() => {
     setNowPage("intro");
