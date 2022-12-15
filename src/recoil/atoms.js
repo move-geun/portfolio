@@ -3,8 +3,8 @@ import { recoilPersist } from "recoil-persist";
 
 const { persistAtom } = recoilPersist();
 
-export const BackgroundColor = atom({
-  key: "BackgroundColor",
-  default: "black",
+export const NowPage = atom({
+  key: "NowPage",
+  default: "intro",
   effects_UNSTABLE: [persistAtom],
 });

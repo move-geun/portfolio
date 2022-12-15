@@ -5,35 +5,52 @@ import MyProfile from "../components/MyProfile";
 import Terminal from "../components/Terminal";
 import ProjectPage from "../components/ProjectPage";
 import { onsikgo, mlbti, dstation } from "../components/Project";
+import { useRecoilState } from "recoil";
+import { NowPage } from "../recoil/atoms";
 import { useEffect } from "react";
 
 const MainPage = () => {
+  const [nowPage, setNowPage] = useRecoilState(NowPage);
+  useEffect(() => {
+    setNowPage("intro");
+  }, []);
+
   return (
     <MainContainer>
-      <ContextBox>
-        <Terminal></Terminal>
-        <IntroPage></IntroPage>
-      </ContextBox>
+      {nowPage === "intro" ? (
+        <ContextBox>
+          <Terminal></Terminal>
+          <IntroPage></IntroPage>
+        </ContextBox>
+      ) : null}
 
-      <ContextBox>
-        <Terminal></Terminal>
-        <MyProfile></MyProfile>
-      </ContextBox>
+      {nowPage === "aboutme" ? (
+        <ContextBox>
+          <Terminal></Terminal>
+          <MyProfile></MyProfile>
+        </ContextBox>
+      ) : null}
 
-      <ContextBox>
-        <Terminal></Terminal>
-        <ProjectPage project={onsikgo}></ProjectPage>
-      </ContextBox>
+      {nowPage === "onsikgo" ? (
+        <ContextBox>
+          <Terminal></Terminal>
+          <ProjectPage project={onsikgo}></ProjectPage>
+        </ContextBox>
+      ) : null}
 
-      <ContextBox>
-        <Terminal></Terminal>
-        <ProjectPage project={mlbti}></ProjectPage>
-      </ContextBox>
+      {nowPage === "mlbti" ? (
+        <ContextBox>
+          <Terminal></Terminal>
+          <ProjectPage project={mlbti}></ProjectPage>
+        </ContextBox>
+      ) : null}
 
-      <ContextBox>
-        <Terminal></Terminal>
-        <ProjectPage project={dstation}></ProjectPage>
-      </ContextBox>
+      {nowPage === "dstation" ? (
+        <ContextBox>
+          <Terminal></Terminal>
+          <ProjectPage project={dstation}></ProjectPage>
+        </ContextBox>
+      ) : null}
     </MainContainer>
   );
 };

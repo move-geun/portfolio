@@ -18,13 +18,17 @@ const ProjectPage = ({ project }) => {
 
   useEffect(() => {
     const item = document.querySelector(`#btn${project.name}${currentCnt}`);
+    const pic = document.querySelector(".project-png");
+    let wid = pic.clientWidth;
     item.className = "carousel-btn active";
 
     carouselRef.current.style.transition = "all 0.6s ease-in-out";
+    // 온식고일 떄만 또 조정하기
     carouselRef.current.style.transform = `translateX(-${
-      currentCnt * carouselRef.current?.clientWidth
+      currentCnt * wid + 15
     }px)`;
   }, [currentCnt, project, carouselRef]);
+
   const title = `< Project_${project.title} / >`;
 
   return (
@@ -57,7 +61,7 @@ const ProjectPage = ({ project }) => {
                 return arr;
               })()}
             </div>
-
+            {/* 온식고일때는 조건 넣어서 버튼 5개만 */}
             <div className="carousel-buttons">
               {(() => {
                 let arr = [];
