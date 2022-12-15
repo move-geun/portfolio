@@ -16,7 +16,7 @@ const TextCase = styled.div`
     border-right: white;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 0.8s steps(22) forwards alternate;
+    animation: typing 0.5s steps(22) forwards alternate;
   }
 
   .int2 {
@@ -25,8 +25,8 @@ const TextCase = styled.div`
     border-right: white;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 0.8s steps(22) forwards alternate;
-    animation-delay: 0.8s;
+    animation: typing 0.5s steps(22) forwards alternate;
+    animation-delay: 0.5s;
   }
   .int3 {
     width: 100%;
@@ -34,8 +34,8 @@ const TextCase = styled.div`
     border-right: white;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 0.8s steps(22) forwards alternate;
-    animation-delay: 1.6s;
+    animation: typing 0.5s steps(22) forwards alternate;
+    animation-delay: 1s;
   }
   .int4 {
     width: 100%;
@@ -43,8 +43,8 @@ const TextCase = styled.div`
     border-right: white;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 0.8s steps(22) forwards alternate;
-    animation-delay: 2.4s;
+    animation: typing 0.5s steps(22) forwards alternate;
+    animation-delay: 1.5s;
   }
   .int5 {
     width: 100%;
@@ -52,8 +52,8 @@ const TextCase = styled.div`
     border-right: white;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 0.8s steps(22) forwards alternate;
-    animation-delay: 3.2s;
+    animation: typing 0.5s steps(22) forwards alternate;
+    animation-delay: 2s;
   }
 `;
 
@@ -64,8 +64,8 @@ const DesignContainer = styled.div`
   align-items: center;
   top: 50%;
   opacity: 0;
-  animation: viewer 0.8s steps(22) forwards alternate;
-  animation-delay: 3.8s;
+  animation: viewer 0.5s steps(22) forwards alternate;
+  animation-delay: 2.5s;
 
   .itemCase {
     display: flex;
@@ -125,8 +125,8 @@ const ChatBox = styled.div`
   left: 3%;
   background-color: black;
   opacity: 0;
-  animation: viewer 0.8s steps(22) forwards alternate;
-  animation-delay: 4.2s;
+  animation: viewer 0.5s steps(22) forwards alternate;
+  animation-delay: 3s;
 
   .hbox {
     display: flex;

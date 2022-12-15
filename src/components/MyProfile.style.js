@@ -75,7 +75,7 @@ const ChatBox = styled.div`
   background-color: black;
   opacity: 0;
   animation: viewer 0.8s steps(22) forwards alternate;
-  animation-delay: 2s;
+  animation-delay: 0.5s;
 
   .hbox {
     display: flex;

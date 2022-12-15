@@ -4,6 +4,8 @@ import IntroPage from "../components/IntroPage";
 import MyProfile from "../components/MyProfile";
 import Terminal from "../components/Terminal";
 import ProjectPage from "../components/ProjectPage";
+import Contact from "../components/Contact";
+import Navigator from "../components/Navigator";
 import { onsikgo, mlbti, dstation } from "../components/Project";
 import { useRecoilState } from "recoil";
 import { NowPage } from "../recoil/atoms";
@@ -17,6 +19,7 @@ const MainPage = () => {
 
   return (
     <MainContainer>
+      <Navigator></Navigator>
       {nowPage === "intro" ? (
         <ContextBox>
           <Terminal></Terminal>
@@ -49,6 +52,13 @@ const MainPage = () => {
         <ContextBox>
           <Terminal></Terminal>
           <ProjectPage project={dstation}></ProjectPage>
+        </ContextBox>
+      ) : null}
+
+      {nowPage === "contact" ? (
+        <ContextBox>
+          <Terminal></Terminal>
+          <Contact></Contact>
         </ContextBox>
       ) : null}
     </MainContainer>
