@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const TextCase = styled.div`
   position: absolute;
-  top: 5%;
+  top: 10%;
   left: 3%;
   margin: 15px 0;
 
@@ -121,7 +121,7 @@ const ChatBox = styled.div`
   align-items: center;
   justify-content: flex-start;
   position: absolute;
-  bottom: 10%;
+  bottom: 15%;
   left: 3%;
   background-color: black;
   opacity: 0;
@@ -147,6 +147,20 @@ const ChatBox = styled.div`
     background-color: black;
     color: white;
     min-width: 350px;
+  }
+
+  .error {
+    h4,
+    h5 {
+      margin: 0;
+    }
+    h5 {
+      margin-top: 3px;
+    }
+    position: absolute;
+    bottom: -35%;
+    color: tomato;
+    animation: viewer 0.8s steps(22) forwards alternate;
   }
 `;
 

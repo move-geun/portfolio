@@ -8,7 +8,7 @@ const IntroPage = () => {
   const [tmpSearch, setTmpSearch] = useState("");
   const [noindex, setNoindex] = useState(false);
   const goProfile = () => {
-    setNowPage("myprofile");
+    setNowPage("aboutme");
   };
   const goOnsikgo = () => {
     setNowPage("onsikgo");
@@ -106,7 +106,12 @@ const IntroPage = () => {
             onKeyUp={(e) => goSearch(e)}
           />
         </label>
-        {noindex ? <h5>잘못 입력하였습니다</h5> : null}
+        {noindex ? (
+          <div className="error">
+            <h4>Please search with the keyword below</h4>
+            <h5>intro, aboutme, onsikgo, mlbti, dstation, contact</h5>
+          </div>
+        ) : null}
       </ChatBox>
     </>
   );

@@ -97,6 +97,19 @@ const ChatBox = styled.div`
     color: white;
     min-width: 350px;
   }
+  .error {
+    h4,
+    h5 {
+      margin: 0;
+    }
+    h5 {
+      margin-top: 3px;
+    }
+    position: absolute;
+    bottom: -77%;
+    color: tomato;
+    animation: viewer 0.8s steps(22) forwards alternate;
+  }
 `;
 
 const FlexRow = styled.div`

@@ -6,11 +6,42 @@ import {
   FlexCol,
   FlexRow,
 } from "./MyProfile.style";
+import { useRecoilState } from "recoil";
+import { NowPage } from "../recoil/atoms";
 
 const MyProfile = () => {
   const title = "< About me / >";
   const slideRef = useRef();
   const [count, setCount] = useState(1);
+  const [nowPage, setNowPage] = useRecoilState(NowPage);
+  const [tmpSearch, setTmpSearch] = useState("");
+  const [noindex, setNoindex] = useState(false);
+
+  const search = (e) => {
+    e.preventDefault();
+    let index = e.target.value.toLowerCase();
+    setTmpSearch(index);
+  };
+
+  const goSearch = (e) => {
+    if (e.keyCode === 13) {
+      if (tmpSearch === "intro") {
+        setNowPage("intro");
+      } else if (tmpSearch === "aboutme") {
+        setNowPage("aboutme");
+      } else if (tmpSearch === "onsikgo") {
+        setNowPage("onsikgo");
+      } else if (tmpSearch === "mlbti") {
+        setNowPage("mlbti");
+      } else if (tmpSearch === "dstation") {
+        setNowPage("dstation");
+      } else if (tmpSearch === "contact") {
+        setNowPage("contact");
+      } else {
+        setNoindex(true);
+      }
+    }
+  };
 
   useEffect(() => {
     const interval = setTimeout(() => {
@@ -122,8 +153,20 @@ const MyProfile = () => {
           <h5 className="sech"> ~/portfolio/aboutme/</h5>
         </div>
         <label htmlFor="navi">
-          <input type="text" id="navi" placeholder="Onsikgo" />
+          <input
+            type="text"
+            id="navi"
+            placeholder="Onsikgo"
+            onChange={(e) => search(e)}
+            onKeyUp={(e) => goSearch(e)}
+          />
         </label>
+        {noindex ? (
+          <div className="error">
+            <h4>Please search with the keyword below</h4>
+            <h5>intro, aboutme, onsikgo, mlbti, dstation, contact</h5>
+          </div>
+        ) : null}
       </ChatBox>
     </MyProfileContainer>
   );

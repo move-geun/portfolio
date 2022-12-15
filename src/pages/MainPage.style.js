@@ -28,7 +28,7 @@ const MainContainer = styled.div`
 `;
 
 const ContextBox = styled.div`
-  height: 500px;
+  height: 630px;
   width: 800px;
   margin: 0 auto;
   margin-top: 50px;
