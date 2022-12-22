@@ -139,6 +139,10 @@ const ProjectPage = ({ project }) => {
             dangerouslySetInnerHTML={{ __html: project.content }}
           ></div>
         </FlexRow>
+        <div
+          className="project_role"
+          dangerouslySetInnerHTML={{ __html: project.role }}
+        ></div>
       </ProjectBox>
       <ChatBox>
         <div className="hbox">
@@ -154,13 +158,13 @@ const ProjectPage = ({ project }) => {
             onKeyUp={(e) => goSearch(e)}
           />
         </label>
-        {noindex ? (
-          <div className="error">
-            <h4>Please search with the keyword below</h4>
-            <h5>intro, aboutme, onsikgo, mlbti, dstation, contact</h5>
-          </div>
-        ) : null}
       </ChatBox>
+      {noindex ? (
+        <div className="error">
+          <h4>Please search with the keyword below</h4>
+          <h5>intro, aboutme, onsikgo, mlbti, dstation, contact</h5>
+        </div>
+      ) : null}
     </ProjectContainer>
   );
 };

@@ -24,6 +24,19 @@ const ProjectContainer = styled.div`
     overflow: visible;
     animation: typing 1.2s steps(22) forwards alternate;
   }
+
+  .error {
+    transform: translateY(-18px);
+    h4,
+    h5 {
+      margin: 0;
+    }
+    h5 {
+      margin-top: 3px;
+    }
+    color: tomato;
+    animation: viewer 0.8s steps(22) forwards alternate;
+  }
 `;
 
 const ProjectBox = styled.div`
@@ -53,6 +66,17 @@ const ProjectBox = styled.div`
     font-size: 1.3rem;
     font-weight: bold;
   }
+
+  .project_role {
+    width: 100%;
+    text-align: left;
+    h4 {
+      margin: 0;
+    }
+    & > span {
+      font-weight: bold;
+    }
+  }
 `;
 
 const ChatBox = styled.div`
@@ -60,7 +84,9 @@ const ChatBox = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  bottom: 0;
   justify-content: flex-start;
+  margin-top: 60px;
   background-color: black;
   opacity: 0;
   animation: viewer 0.8s steps(22) forwards alternate;
@@ -86,20 +112,6 @@ const ChatBox = styled.div`
     color: white;
     min-width: 350px;
   }
-
-  .error {
-    h4,
-    h5 {
-      margin: 0;
-    }
-    h5 {
-      margin-top: 3px;
-    }
-    position: absolute;
-    bottom: -3%;
-    color: tomato;
-    animation: viewer 0.8s steps(22) forwards alternate;
-  }
 `;
 
 const FlexRow = styled.div`
@@ -119,7 +131,11 @@ const FlexRow = styled.div`
   }
 
   .project_content {
+    text-align: start;
+    height: 100%;
     width: 48%;
+    padding-left: 10px;
+    padding-top: 150px;
     word-break: normal;
     white-space: pre-line;
   }
