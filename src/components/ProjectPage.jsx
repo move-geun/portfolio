@@ -52,13 +52,18 @@ const ProjectPage = ({ project }) => {
     const pic = document.querySelector(".project-png");
     let wid = pic.clientWidth;
     item.className = "carousel-btn active";
-
     carouselRef.current.style.transition = "all 0.6s ease-in-out";
     // 온식고일 떄만 또 조정하기
     if (nowPage === "onsikgo") {
-      carouselRef.current.style.transform = `translateX(-${
-        currentCnt * wid + 16.9
-      }px)`;
+      if (currentCnt === 4) {
+        carouselRef.current.style.transform = `translateX(-${
+          currentCnt * wid + 180
+        }px)`;
+      } else {
+        carouselRef.current.style.transform = `translateX(-${
+          currentCnt * wid + 16.9
+        }px)`;
+      }
     } else {
       carouselRef.current.style.transform = `translateX(-${
         currentCnt * wid
