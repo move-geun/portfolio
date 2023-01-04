@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
 const MainContainer = styled.div`
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   @keyframes typing {
     from {
       width: 0;
@@ -30,8 +35,7 @@ const MainContainer = styled.div`
 const ContextBox = styled.div`
   height: 630px;
   width: 800px;
-  margin: 0 auto;
-  margin-top: 50px;
+  /* margin: 0 auto; */
   position: relative;
   display: flex;
   flex-direction: column;

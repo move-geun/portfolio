@@ -14,6 +14,7 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    height: 100%;
     padding: 0;
     color: white;
     background: #212121;

@@ -11,9 +11,8 @@ const NavigatorContainer = styled.div`
   border-top-right-radius: 10px;
   border-radius: 10px;
   background-color: black;
-  position: absolute;
-  left: 13%;
-  top: 13%;
+  position: relative;
+  margin-right: 5%;
   box-shadow: 5px 5px 5px -5px #333;
   animation: viewer 0.8s steps(22) forwards alternate;
   animation-delay: 3s;
