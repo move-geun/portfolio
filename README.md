@@ -10,14 +10,14 @@
 6. [프로젝트 결과물](#프로젝트결과물)
 7. [상세 기능](#상세기능)
 
-## 포트폴리오 소개
+## [포트폴리오 소개](#포트폴리오-소개)
 
 프론트엔드 개발자로서 
 
 - 소개영상 보기 : [UCC 링크](https://www.youtube.com/watch?v=9xqYnEK3skY)
 - 시연영상 보기 : [시연영상 링크](https://www.youtube.com/watch?v=snCxEMzByEY)
 
-## Project&nbsp;Period
+## [Project&nbsp;Period](#ProjectPeriod)
 
 SSAFY 7기 2학기 공통 프로젝트  
 2022.07.04 ~ 2022.08.19
