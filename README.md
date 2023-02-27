@@ -20,7 +20,7 @@
 + 제작자(개발자)가 아닌 사용자 입장에서 서비스 이용 피로도를 낮추기 위해 지속적인 피드백을 받습니다
 + 동료 개발자들과의 활발한 소통을 위해 일일 회의, 주간 회의, 중간 회의를 적극 활용합니다
 
-
+<br>
 
 ### 사용가능기술
 
@@ -30,7 +30,7 @@
 * 21년 12월 42seoul La piscine 참여
 * 22년 1월~12월 삼성청년소프트웨어 SSAFY 7기 과정 수료
 
-
+<br>
 
 다음과 같은 기술을 활용할 수 있습니다
 
@@ -40,7 +40,7 @@
 | Backend  | <img src="https://img.shields.io/badge/django-092E20?style=flat-square&logo=django&logoColor=white"/><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/> |
 |   Tool   | <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/><img src="https://img.shields.io/badge/GitLab-fc6d26?style=flat-square&logo=GitLab&logoColor=white"/><img src="https://img.shields.io/badge/Jira-0052cc?style=flat-square&logo=Jira Software&logoColor=white"/><img src="https://img.shields.io/badge/Slack-4a154b?style=flat-square&logo=Slack&logoColor=white"/><img src="https://img.shields.io/badge/Figma-f24e1e?style=flat-square&logo=Figma&logoColor=white"/><img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=Postman&logoColor=white"/><img src="https://img.shields.io/badge/Swagger-85ea2d?style=flat-square&logo=Swagger&logoColor=white"/> |
 
-
+<br>
 
 ### 포트폴리오 결과물
 
@@ -52,7 +52,7 @@
   * 페이지 대표 이미지를 클릭 또는 하단의 터미널 입력창을 통해 해당 페이지로 이동할 수 있습니다
   * Placeholder 기능을 통해 입력 예시를 확인할 수 있으며, 잘못된 경로 입력시 이동가능 경로를 확인할 수 있도록 구성하였습니다
 
-  
+  <br>
 
 * 자기소개 화면
 
@@ -60,7 +60,7 @@
 
   * 프로젝트 경력과 활용기술 등을 나열하였습니다
 
-
+<br>
 
 * 프로젝트 소개 화면
 
@@ -69,7 +69,7 @@
   * 참여하였던 3가지 프로젝트의 간단한 기획의도와 프로젝트 완성 페이지로 구성되어 있습니다
   * 프로젝트 간 제가 맡은 역할에 대해 기록하였습니다
 
-  
+  <br>
 
 * Contact 화면
 
@@ -77,7 +77,7 @@
 
   * 메일, 전화번호, 깃헙 링크 등을 적어두었습니다
 
-
+<br>
 
 #### Contact me
 
@@ -85,9 +85,7 @@
 - Mail : ehdrms1426@gmail.com
 - Github : https://github.com/move-geun
 
-
-
-
+<br>
 
 ## 프로젝트 소개
 
@@ -111,7 +109,7 @@ Onsikgo 팀은 판매되지 못한 채 버려지는 음식들이 환경오염에
 
 Onsikgo는 유통과 섭취에 전혀 문제가 없는 제품들에 한해, 정상 판매가보다 할인된 가격에 가게와 고객을 연결하는 B2C 서비스입니다
 
-
+<br>
 
 ✔️ 맡은 역할
 
@@ -123,14 +121,14 @@ Onsikgo는 유통과 섭취에 전혀 문제가 없는 제품들에 한해, 정�
 + WordCloud와 Chart.js 등 외부 패키지를 도입하여 Onsikgo를 통해 얻은 수익을 시각화 하였습니다
 + 현재 위치 또는 가게 종류에 따라 현재 등록된 제품들의 목록이 보여지게 하였습니다
 
-
+<br>
 
  👍 나의 시도 및 도전
 
 + Vuex를 도입하여 상태관리를 하였습니다
 + 화면 크기에 따라 다르게 보여지는 웹앱 형식으로 구성하였습니다
 
-
+<br>
 
 ✍️ 아쉬운 점
 
@@ -141,9 +139,9 @@ Onsikgo는 유통과 섭취에 전혀 문제가 없는 제품들에 한해, 정�
   + Bootstrap과 Vuetify를 섞어 화면을 구성하였는데, 서버에 올라가며 CSS 우선순위 충돌이 일어난 것 같았습니다. 정확한 원인을 찾지 못하여 아쉽습니다
   + 로컬 화면이 아닌 서버에 보여지는 화면을 기준으로 CSS를 전면 수정하여 해결하였습니다
 
+<br>
 
-
-
+<br>
 
 
 
@@ -167,7 +165,7 @@ MLBTI는 '함께 즐기는 MLB경기'로, MLB Together Interesting의 약자입�
 
 이에 그치지 않고, 역대 MLB 선수들로 이루어진 자신만의 팀을 만들어 실제 팀과 경기할 수 있는 시뮬레이션 서비스를 제공합니다.
 
-
+<br>
 
 ✔️ 맡은 역할
 
@@ -177,7 +175,7 @@ MLBTI는 '함께 즐기는 MLB경기'로, MLB Together Interesting의 약자입�
 + 메인 페이지를 구성하였습니다
 + 경기 데이터를 받아와 경기 시뮬레이션을 구현하였습니다
 
-
+<br>
 
  👍 나의 시도 및 도전
 
@@ -187,7 +185,7 @@ MLBTI는 '함께 즐기는 MLB경기'로, MLB Together Interesting의 약자입�
 
 + 경기 예측과 실제 경기 결과를 비교하여 서비스 신뢰도를 높였습니다
 
-  
+  <br>
 
 ✍️ 아쉬운 점
 
@@ -195,9 +193,9 @@ MLBTI는 '함께 즐기는 MLB경기'로, MLB Together Interesting의 약자입�
   * 데이터를 불러오기 전, 필터 기능을 통해 최소한의 데이터만 요청하도록 하였습니다
   * 완전한 해결은 불가능하였고, 로딩 표시를 통해 서비스가 작동중임을 표시하였습니다
 
+<br>
 
-
-
+<br>
 
 
 
@@ -219,7 +217,7 @@ SSAFY 7기 2학기 자율 프로젝트  (2022.10.11 ~ 2022.11.18)
 
 D-station은 분야별, 언어별 학습 Reference, 학습 단계별 코드 문제, 퀴즈, CS 상식을 제공하며 자동으로 github에 학습한 내용을 기록해줍니다.
 
-
+<br>
 
 ✔️ 맡은 역할
 
@@ -227,7 +225,7 @@ D-station은 분야별, 언어별 학습 Reference, 학습 단계별 코드 문�
 + 마이페이지와 개발 성향 조사를 위한 설문조사 페이지를 구성하였습니다
 + 경험치를 통해 학습 수준을 한 눈에 알 수 있게 구성하였습니다
 
-
+<br>
 
  👍 시도 및 도전
 
@@ -237,7 +235,7 @@ D-station은 분야별, 언어별 학습 Reference, 학습 단계별 코드 문�
   + 로딩 시간을 %로 구현하였고, CS 지식을 함께 나타내어 지루함을 줄였습니다
 + 학습을 통해 MD 파일을 작성하게 될 경우 개인 페이지에 Git의 잔디와 같이 학습량이 기록되도록 하였습니다
 
-
+<br>
 
 ✍️ 아쉬운 점
 
