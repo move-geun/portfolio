@@ -3,129 +3,246 @@
 ### 목차
 
 1. [포트폴리오 소개](#포트폴리오-소개)
-2. [Project Period](#ProjectPeriod)
-3. [Contributors](#Contributors)
-4. [사용 스택](#사용스택)
-5. [프로젝트 산출물](#프로젝트산출물)
-6. [프로젝트 결과물](#프로젝트결과물)
-7. [상세 기능](#상세기능)
-
-## [포트폴리오 소개](#포트폴리오-소개)
-
-프론트엔드 개발자로서 
-
-- 소개영상 보기 : [UCC 링크](https://www.youtube.com/watch?v=9xqYnEK3skY)
-- 시연영상 보기 : [시연영상 링크](https://www.youtube.com/watch?v=snCxEMzByEY)
-
-## [Project&nbsp;Period](#ProjectPeriod)
-
-SSAFY 7기 2학기 공통 프로젝트  
-2022.07.04 ~ 2022.08.19
+2. [프로젝트 소개](#프로젝트-소개)
+3. [포트폴리오 페이지 바로가기](https://move-geun.github.io/portfolio/)
 
 
 
-## 사용&nbsp;스택
+## 포트폴리오 소개
 
-| 용도      | 스택                                                         | 버전                              |
-| --------- | ------------------------------------------------------------ | --------------------------------- |
-| 개발 언어 | <img src="https://img.shields.io/badge/Java-007396?style=plastic&logo=Java&logoColor=white"> | Open JDK 8                        |
-| IDE       | <img src="https://img.shields.io/badge/IntelliJ-2560E0?style=plastic&logo=IntelliJ IDEA&logoColor=white"> <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=plastic&logo=Visual Studio Code&logoColor=white"> | IntelliJ 2021.3.2, VS Code 1.70.1 |
-| 서버 설계 | <img src="https://img.shields.io/badge/SpringBoot-339933?style=plastic&logo=SpringBoot&logoColor=white"> <img src="https://img.shields.io/badge/Gradle-02303A?style=plastic&logo=Gradle&logoColor=white"> | Spring Boot 2.7.2, Gradle 7.5     |
-| DB        | <img src="https://img.shields.io/badge/MySQL-4169E1?style=plastic&logo=MySQL&logoColor=white"> <img src="https://img.shields.io/badge/Redis-DC382D?style=plastic&logo=Redis&logoColor=white"> | MySQL 8.0.30, Redis 7.0.4         |
-| Dev-Ops   | <img src="https://img.shields.io/badge/Docker-2496ED?style=plastic&logo=Docker&logoColor=white"> <img src="https://img.shields.io/badge/Jenkins-D24939?style=plastic&logo=Jenkins&logoColor=white"> | Docker 20.10.17, Jenkins 2.60.3   |
-| Server    | <img src="https://img.shields.io/badge/Amazon EC2-FF9900?style=plastic&logo=Amazon EC2&logoColor=white"> <img src="https://img.shields.io/badge/Amazon S3-569A31?style=plastic&logo=Amazon S3&logoColor=white"> | AWS EC2 Ubuntu 20.04 LTS          |
-| UI 개발   | <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=plastic&logo=Vue.js&logoColor=white"> <img src="https://img.shields.io/badge/Node.js-339933?style=plastic&logo=Node.js&logoColor=white"> | Vue 2.7.7, Node.js 16.15.1        |
-| 형상관리  | <img src="https://img.shields.io/badge/git-F05032?style=plastic&logo=git&logoColor=white"> |                                   |
-| 이슈관리  | <img src="https://img.shields.io/badge/Jira-0052CC?style=plastic&logo=Jira Software&logoColor=white"> |                                   |
+#### 안녕하세요! Frontend 개발 지원자 이동근입니다.
 
-## 프로젝트&nbsp;결과물
+고객 행동을 유발할 수 있는 UI/UX를 구성하기 위해 다음과 같이 노력합니다!
 
-- [포팅메뉴얼](./exec)
-- [중간발표자료](./기획/발표자료/온식고_중간발표.pptx)
-- [최종발표자료](./기획/발표자료/온식고_최종발표.pptx)
++ 프로젝트 기획단계에 가장 많은 시간을 쏟습니다
++ 사전조사를 실시하고 결과에 따라 구성 전체를 바꾸기도 합니다
++ 프로젝트 완성후 실사용자들의 피드백에 따라 화면을 재구성합니다
++ 제작자(개발자)가 아닌 사용자 입장에서 서비스 이용 피로도를 낮추기 위해 지속적인 피드백을 받습니다
++ 동료 개발자들과의 활발한 소통을 위해 일일 회의, 주간 회의, 중간 회의를 적극 활용합니다
 
-## 상세&nbsp;기능
 
-### 메인화면
 
-- 온식고 식구에게 문의하기로 사용자의 피드백을 받을 수 있습니다.
-- 챗봇을 통하여 실시간 상담이 가능합니다.
-<img width="70%" src="https://user-images.githubusercontent.com/87989933/185786944-135b0bbd-90f6-4f71-8f46-0926630ea586.gif"/>
+#### 사용가능기술
 
-### 온식고 소개 & 이용방법
+저의 교육 이력은 다음과 같습니다
 
-- 온식고 서비스의 소개 와 이용방법을 나타냅니다.
-<img width="25%" height="10%" src="https://user-images.githubusercontent.com/87989933/185745056-eaec4879-c369-4708-827c-8ba65ece38a9.gif"/>
+* 20년 8월 동아대학교 경영학과 졸업(3.97 / 4.5)
+* 21년 12월 42seoul La piscine 참여
+* 22년 1월~12월 삼성청년소프트웨어 SSAFY 7기 과정 수료
 
-## 유저
 
-### 회원가입 & 소셜로그인
 
-- 이메일 인증을 진행하고 유저의 정보를 기입하여 회원가입 합니다.
-- 카카오, 네이버를 활용한 소셜 로그인을 진행합니다.
-<img width="70%" src="https://onsikgo.s3.ap-northeast-2.amazonaws.com/GIF/%EC%9C%A0%EC%A0%80+%EB%A1%9C%EA%B7%B8%EC%9D%B8.gif"/>
+다음과 같은 기술을 활용할 수 있습니다
 
-### 세일상품 리스트 & 카테고리로 보기
+|   분류   |                           활용기술                           |
+| :------: | :----------------------------------------------------------: |
+| Frontend | <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"/><img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"/><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/><img src="https://img.shields.io/badge/styled components-DB7093?style=flat-square&logo=styled-components&logoColor=white"/><img src="https://img.shields.io/badge/Vue.js-4FC08D?style=plastic&logo=Vue.js&logoColor=white"><img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=black"/><img src="https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=Three.js&logoColor=white"/> |
+| Backend  | <img src="https://img.shields.io/badge/django-092E20?style=flat-square&logo=django&logoColor=white"/><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/> |
+|   Tool   | <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/><img src="https://img.shields.io/badge/GitLab-fc6d26?style=flat-square&logo=GitLab&logoColor=white"/><img src="https://img.shields.io/badge/Jira-0052cc?style=flat-square&logo=Jira Software&logoColor=white"/><img src="https://img.shields.io/badge/Slack-4a154b?style=flat-square&logo=Slack&logoColor=white"/><img src="https://img.shields.io/badge/Figma-f24e1e?style=flat-square&logo=Figma&logoColor=white"/><img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=Postman&logoColor=white"/><img src="https://img.shields.io/badge/Swagger-85ea2d?style=flat-square&logo=Swagger&logoColor=white"/> |
 
-- 현재 세일 상품 리스트를 확인합니다.
-- 카카오맵을 통해 내 위치 주변의 세일 상품 매장을 마커로 표시합니다.
-- 카테고리로 세일 상품을 등록한 가게 정보를 확인할 수 있습니다.
-<img width="25%" height="10%" src="https://user-images.githubusercontent.com/87989933/185745406-3e5a58aa-eae8-4708-aa12-f1d3051d2f63.gif"/>
 
-### 주문하기
 
-- 선택한 세일 상품을 주문합니다.
-<img width="25%" height="10%" src="https://user-images.githubusercontent.com/87989933/185745537-35ed299d-0c52-49cf-a894-f40960b980f7.gif"/>
+#### 포트폴리오 결과물
 
-### 가게 상세정보 확인 & SNS 공유
+* Intro 화면
 
-- 해당 가게의 상세정보를 확인합니다.
-- 현재 세일 상품 목록 확인, 리뷰 작성, SNS 공유가 가능합니다.
-<img width="25%" height="10%" src="https://user-images.githubusercontent.com/87989933/185745546-82165a1c-bb91-4b95-8b4a-e53ac82a92cd.gif"/>
+  ![main](https://user-images.githubusercontent.com/85543481/221589309-5c58870a-8d23-4784-906e-5049f2cba127.gif)
 
-### 알림
+  * 간단한 자기소개와 함께 각 페이지로 이동할 수 있는 Navbar로 구성되어 있습니다
+  * 페이지 대표 이미지를 클릭 또는 하단의 터미널 입력창을 통해 해당 페이지로 이동할 수 있습니다
+  * Placeholder 기능을 통해 입력 예시를 확인할 수 있으며, 잘못된 경로 입력시 이동가능 경로를 확인할 수 있도록 구성하였습니다
 
-- 주문 요청에 대한 알림을 확인합니다.
-<img width="25%" height="10%" src="https://user-images.githubusercontent.com/87989933/185745551-57bdaead-aefb-4f0c-982d-f3ee8019e6eb.gif"/>
+  
 
-## 업주
+* 자기소개 화면
 
-### 회원가입
+  ![aboutme](https://user-images.githubusercontent.com/85543481/221589466-8ba45fe4-b7b4-427e-b55a-b1a68ab5d9d1.gif)
 
-- 이메일 인증과 사업자 등록번호 조회 API를 활용해 사업자 번호 인증을 진행합니다.
-- 최초 가게 정보를 기입하여 회원가입을 진행합니다.
-<img width="70%" src="https://user-images.githubusercontent.com/87989933/185745556-205d4594-c214-49f1-8b38-9f0a05ac7a7b.gif"/>
+  * 프로젝트 경력과 활용기술 등을 나열하였습니다
 
-### 상품등록
 
-- 상품정보를 입력하여 해당 가게의 상품을 등록합니다.
-<img width="70%" src="https://user-images.githubusercontent.com/87989933/185786952-d535e321-ccaa-4bf5-8874-9d535bf65878.gif"/>
 
-### 재고등록
+* 프로젝트 소개 화면
 
-- 당일 재고 상품의 할인가 및 수량을 입력하여 재고를 등록합니다.
-<img width="70%" src="https://onsikgo.s3.ap-northeast-2.amazonaws.com/GIF/%EC%9E%AC%EA%B3%A0%EB%93%B1%EB%A1%9D.gif"/>
+  ![project](https://user-images.githubusercontent.com/85543481/221589583-05b9b97e-3c6e-445e-a4d6-41c3eb1f7a8a.gif)
 
-### 마이페이지 - 데이터 분석
+  * 참여하였던 3가지 프로젝트의 간단한 기획의도와 프로젝트 완성 페이지로 구성되어 있습니다
+  * 프로젝트 간 제가 맡은 역할에 대해 기록하였습니다
 
-- 최근 1주일간 판매 데이터를 나타냅니다.
-- 원하는 기간을 선택하여 해당 기간의 판매 데이터를 나타냅니다.
-<img width="25%" height="10%" src="https://user-images.githubusercontent.com/87989933/185745619-83bdd161-d2cd-4cb4-a2e7-f35fdda77a11.gif"/>
+  
 
-### 가게정보 수정
+* Contact 화면
 
-- 해당 가게의 정보를 수정합니다.
-<img width="25%" height="10%" src="https://user-images.githubusercontent.com/87989933/185745613-a841cd44-3b3b-4cef-b020-083ebf024281.gif"/>
+  ![contact](https://user-images.githubusercontent.com/85543481/221589705-722b6ff3-ac92-4d34-a4b3-76c073fe2b07.gif)	
 
-### 영업종료
+  * 메일, 전화번호, 깃헙 링크 등을 적어두었습니다
 
-- 당일 영업을 종료합니다.
-- 당일 판매 데이터가 저장됩니다.
-<img width="25%" height="10%" src="https://user-images.githubusercontent.com/87989933/185745931-73fbd3b0-ea7e-4407-9146-3056da3b0497.gif"/>
 
-### 알림
 
-- 고객이 요청한 주문을 승인하거나, 사유를 선택하여 거절합니다.
-- 고객이 픽업완료시 수령완료 처리를 진행합니다.
-<img width="25%" height="10%" src="https://user-images.githubusercontent.com/87989933/185745607-d75629af-26a2-4504-aafd-a7e235c00600.gif"/>
+#### Contact me
 
+- Call : 010-6419-0743
+- Mail : ehdrms1426@gmail.com
+- Github : https://github.com/move-geun
+
+
+
+
+
+## 프로젝트 소개
+
+#### 1. Onsikgo(온식고)
+
+SSAFY 7기 2학기 공통 프로젝트  (2022.07.04 ~ 2022.08.19)
+
+🎉 공통 프로젝트 우수상 수상
+
+[Onsikgo Github 바로가기](https://github.com/move-geun/OnSikGo)
+
+![main](https://user-images.githubusercontent.com/85543481/221573299-989650fa-ca91-4b30-9586-0857fc50924f.gif)
+
+![mobile](https://user-images.githubusercontent.com/85543481/221573374-7769af97-9a5b-4820-9b06-beb080ef74e6.gif)
+
+
+
+온식고란, 세상을 위한 따뜻한 마음과 음식이 전해지길 바란다는 뜻입니다
+
+Onsikgo 팀은 판매되지 못한 채 버려지는 음식들이 환경오염에 끼치는 영향에 대해 생각하였습니다
+
+Onsikgo는 유통과 섭취에 전혀 문제가 없는 제품들에 한해, 정상 판매가보다 할인된 가격에 가게와 고객을 연결하는 B2C 서비스입니다
+
+
+
+✔️ 맡은 역할
+
++ Frontend Skeleton 코드를 제작하였습니다
++ Viewport에 따른 웹앱 화면을 구성하였습니다
++ 처음 이용하는 고객들을 위한 Onsikgo 사용 설명 페이지를 구성하였습니다
++ 고객과 점주의 상태값에 따른 화면 구성과 알림페이지를 구성하였습니다
++ 상품 및 재고 CRUD 페이지를 구성하였습니다
++ WordCloud와 Chart.js 등 외부 패키지를 도입하여 Onsikgo를 통해 얻은 수익을 시각화 하였습니다
++ 현재 위치 또는 가게 종류에 따라 현재 등록된 제품들의 목록이 보여지게 하였습니다
+
+
+
+ 👍 나의 시도 및 도전
+
++ Vuex를 도입하여 상태관리를 하였습니다
++ 화면 크기에 따라 다르게 보여지는 웹앱 형식으로 구성하였습니다
+
+
+
+✍️ 아쉬운 점
+
++ 제품 주문, 주문확인과 같은 알림페이지의 알림이 실시간으로 반영되지 않았습니다
+  + 서버와 데이터는 정확하게 전달되었으나, 웹 특성상 요청이 없는 경우 새로고침이 되지 않아 실시간으로 확인이 불가능했습니다. 웹 사이트에서 실시간으로 알림을 확인할 수 있도록 시도하였지만 해결하지 못한 점이 아쉽습니다
+  + 일정 시간마다 페이지를 새로고침하여 임의로 해결할 수 있었지만, 근본적인 해결책이 아닐뿐더러 서비스 이용 중인 고객의 작성 중인 데이터가 사라질 경우를 고려하여 시도하지 않았습니다
++ 로컬에서 보여지는 화면 구성과 서버에서 보여지는 화면 구성이 상이하였습니다
+  + Bootstrap과 Vuetify를 섞어 화면을 구성하였는데, 서버에 올라가며 CSS 우선순위 충돌이 일어난 것 같았습니다. 정확한 원인을 찾지 못하여 아쉽습니다
+  + 로컬 화면이 아닌 서버에 보여지는 화면을 기준으로 CSS를 전면 수정하여 해결하였습니다
+
+
+
+
+
+
+
+#### 2. MLBTI
+
+SSAFY 7기 2학기 특화 프로젝트  (2022.08.22 ~ 2022.10.07)
+
+🎉특화 프로젝트 우수상 수상
+
+[MLBTI Github 바로가기](https://github.com/move-geun/MLBTI)
+
+
+
+![mlbti crop](https://user-images.githubusercontent.com/85543481/221567472-b98caa86-e9e6-4f13-af55-22953720df2e.gif)
+
+
+
+MLBTI는 '함께 즐기는 MLB경기'로, MLB Together Interesting의 약자입니다.
+
+날씨, 투구 시간, 타율, 역대 전적 등 MLB 경기 중에 쌓인 수많은 데이터를 활용하여 경기를 예측합니다.
+
+이에 그치지 않고, 역대 MLB 선수들로 이루어진 자신만의 팀을 만들어 실제 팀과 경기할 수 있는 시뮬레이션 서비스를 제공합니다.
+
+
+
+✔️ 맡은 역할
+
++ Frontend Skeleton 코드를 제작하였습니다
++ 디스플레이 크기에 따라 반응형 웹을 구성하였습니다
++ 회원가입, 로그인, 개인 프로필 페이지 전반을 구성하였습니다
++ 메인 페이지를 구성하였습니다
++ 경기 데이터를 받아와 경기 시뮬레이션을 구현하였습니다
+
+
+
+ 👍 나의 시도 및 도전
+
++ React와 Redux를 활용하였습니다
+
++ 디스플레이 크기에 따른 반응형 웹을 구성하였습니다
+
++ 경기 예측과 실제 경기 결과를 비교하여 서비스 신뢰도를 높였습니다
+
+  
+
+✍️ 아쉬운 점
+
+* 방대한 양의 데이터를 불러와 특정 페이지의 로딩 속도가 느렸습니다
+  * 데이터를 불러오기 전, 필터 기능을 통해 최소한의 데이터만 요청하도록 하였습니다
+  * 완전한 해결은 불가능하였고, 로딩 표시를 통해 서비스가 작동중임을 표시하였습니다
+
+
+
+
+
+
+
+#### 3. D-station
+
+SSAFY 7기 2학기 자율 프로젝트  (2022.10.11 ~ 2022.11.18)
+
+[D-station Github 바로가기](https://github.com/move-geun/D-Station)
+
+
+
+![d_main](https://user-images.githubusercontent.com/85543481/221574172-c165a59d-d6e0-4a1d-ad9f-a457925dbdb0.gif)
+
+
+
+개발의 수요가 늘어남에 따라, 많은 사람들이 개발 공부에 도전하고 있습니다.
+
+하지만 코딩을 처음 접하는 사람은 어떤 것을 어디서부터 공부해야하는지, 자신이 얼마나 공부하였는지 알기 어렵습니다. 
+
+D-station은 분야별, 언어별 학습 Reference, 학습 단계별 코드 문제, 퀴즈, CS 상식을 제공하며 자동으로 github에 학습한 내용을 기록해줍니다.
+
+
+
+✔️ 맡은 역할
+
++ 메인페이지와 사용자 편의를 위한 네비게이션을 구성하였습니다
++ 마이페이지와 개발 성향 조사를 위한 설문조사 페이지를 구성하였습니다
++ 경험치를 통해 학습 수준을 한 눈에 알 수 있게 구성하였습니다
+
+
+
+ 👍 시도 및 도전
+
++ Recoil을 도입하여 상태관리를 하였습니다
++ Three.js를 활용하여 페이지를 구성하였습니다
++ 페이지 전환에 오랜 시간이 걸렸습니다
+  + 로딩 시간을 %로 구현하였고, CS 지식을 함께 나타내어 지루함을 줄였습니다
++ 학습을 통해 MD 파일을 작성하게 될 경우 개인 페이지에 Git의 잔디와 같이 학습량이 기록되도록 하였습니다
+
+
+
+✍️ 아쉬운 점
+
++ Three.js 학습에 너무 많은 시간을 쏟아 서비스 완성도를 많이 높이지 못하였습니다
++ Gitlab Repository를 초기화하였습니다
+  + 저희 팀이 Gitlab 무료 제공 용량이 5GB임을 모르고 glb와 gltf 파일을 저장하고 Cloud처럼 사용하였습니다. 결국 최대 용량을 넘겼고 더 이상 git을 사용할 수 없었습니다
+  + git을 clone하고 특정 시점으로 복구하려 시도하였으나 clone 자체가 불가능하였습니다. 팀원들의 local 파일들을 합쳐 임의로 완성본을 만들어놓고 repo를 초기화하는 것으로 해결하였습니다
+  + 이후 gitignore에 glb와 gltf 파일을 추가하여 업로드되는 것을 막았습니다
