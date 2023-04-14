@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavigatorContainer } from "./Navigator.style";
 import { useRecoilState } from "recoil";
 import { NowPage } from "../recoil/atoms";
@@ -6,25 +6,40 @@ import Terminal from "./Terminal";
 
 const Navigator = () => {
   const [nowPage, setNowPage] = useRecoilState(NowPage);
+  const [disableClick, setDisableClick] = useState(true);
 
   const goIntro = () => {
+    if (disableClick) return;
     setNowPage("intro");
   };
   const goProfile = () => {
+    if (disableClick) return;
     setNowPage("aboutme");
   };
   const goOnsikgo = () => {
+    if (disableClick) return;
     setNowPage("onsikgo");
   };
   const goMlbti = () => {
+    if (disableClick) return;
     setNowPage("mlbti");
   };
   const goDstation = () => {
+    if (disableClick) return;
     setNowPage("dstation");
   };
   const goContact = () => {
+    if (disableClick) return;
     setNowPage("contact");
   };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setDisableClick(false);
+    }, 3400);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <NavigatorContainer>
       <Terminal></Terminal>
