@@ -67,6 +67,7 @@ const ProjectBox = styled.div`
       color: white;
       border-radius: 5px;
       padding: 4px 4px;
+      cursor: pointer;
     }
   }
 
@@ -161,6 +162,7 @@ const FlexRow = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    cursor: pointer;
   }
 
   .carousel-btn {
