@@ -60,6 +60,14 @@ const ProjectBox = styled.div`
   .titlebox {
     font-size: 2.5rem;
     font-weight: bold;
+    button {
+      margin-left: 1.5rem;
+      font-weight: 800;
+      background-color: red;
+      color: white;
+      border-radius: 5px;
+      padding: 4px 4px;
+    }
   }
 
   .subtitlebox {

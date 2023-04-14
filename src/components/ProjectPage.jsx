@@ -21,6 +21,11 @@ const ProjectPage = ({ project }) => {
     setTmpSearch(index);
   };
 
+  const goReadme = (e, link) => {
+    e.preventDefault();
+    window.open(link, "_blank");
+  };
+
   const goSearch = (e) => {
     if (e.keyCode === 13) {
       if (tmpSearch === "intro") {
@@ -77,7 +82,10 @@ const ProjectPage = ({ project }) => {
     <ProjectContainer>
       <h3 className="title">{title}</h3>
       <ProjectBox>
-        <div className="titlebox">{project.title}</div>
+        <div className="titlebox">
+          {project.title}
+          <button onClick={(e) => goReadme(e, project.github)}>README</button>
+        </div>
         <div className="subtitlebox">{project.subtitle}</div>
         <p>
           {project.date} {`( ${project.member}인 프로젝트 )`}
