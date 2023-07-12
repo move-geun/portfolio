@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useEffect } from "react";
 import { MainContainer, ContextBox } from "./MainPage.style";
 import IntroPage from "../components/IntroPage";
 import MyProfile from "../components/MyProfile";
@@ -20,47 +20,22 @@ const MainPage = () => {
   return (
     <MainContainer>
       <Navigator></Navigator>
-      {nowPage === "intro" ? (
-        <ContextBox>
-          <Terminal></Terminal>
+      <ContextBox>
+        <Terminal></Terminal>
+        {nowPage === "intro" ? (
           <IntroPage></IntroPage>
-        </ContextBox>
-      ) : null}
-
-      {nowPage === "aboutme" ? (
-        <ContextBox>
-          <Terminal></Terminal>
+        ) : nowPage === "aboutme" ? (
           <MyProfile></MyProfile>
-        </ContextBox>
-      ) : null}
-
-      {nowPage === "onsikgo" ? (
-        <ContextBox>
-          <Terminal></Terminal>
+        ) : nowPage === "onsikgo" ? (
           <ProjectPage project={onsikgo}></ProjectPage>
-        </ContextBox>
-      ) : null}
-
-      {nowPage === "mlbti" ? (
-        <ContextBox>
-          <Terminal></Terminal>
+        ) : nowPage === "mlbti" ? (
           <ProjectPage project={mlbti}></ProjectPage>
-        </ContextBox>
-      ) : null}
-
-      {nowPage === "dstation" ? (
-        <ContextBox>
-          <Terminal></Terminal>
+        ) : nowPage === "dstation" ? (
           <ProjectPage project={dstation}></ProjectPage>
-        </ContextBox>
-      ) : null}
-
-      {nowPage === "contact" ? (
-        <ContextBox>
-          <Terminal></Terminal>
+        ) : nowPage === "contact" ? (
           <Contact></Contact>
-        </ContextBox>
-      ) : null}
+        ) : null}
+      </ContextBox>
     </MainContainer>
   );
 };
