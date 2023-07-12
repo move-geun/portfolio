@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
-import FrontSlider from "./FrontSlider";
+import React, { useState } from "react";
+import ImgSlider from "./ImgSlider";
 import {
   MyProfileContainer,
   ChatBox,
@@ -11,8 +11,6 @@ import { NowPage } from "../recoil/atoms";
 
 const MyProfile = () => {
   const title = "< About me / >";
-  const slideRef = useRef();
-  const [count, setCount] = useState(1);
   const [nowPage, setNowPage] = useRecoilState(NowPage);
   const [tmpSearch, setTmpSearch] = useState("");
   const [noindex, setNoindex] = useState(false);
@@ -43,31 +41,70 @@ const MyProfile = () => {
     }
   };
 
-  // useEffect(() => {
-  //   const interval = setTimeout(() => {
-  //     setCount(() => {
-  //       if (count < 2) {
-  //         setCount(count + 1);
-  //       } else {
-  //         setCount(1);
-  //       }
-  //     });
+  const frontImg = [
+    {
+      src: process.env.PUBLIC_URL + "/assets/skills/js.png",
+      alt: "JS",
+    },
+    {
+      src: process.env.PUBLIC_URL + "/assets/skills/react.png",
+      alt: "React",
+    },
+    {
+      src: process.env.PUBLIC_URL + "/assets/skills/redux.png",
+      alt: "Redux",
+    },
+    {
+      src: process.env.PUBLIC_URL + "/assets/skills/recoil.png",
+      alt: "Recoil",
+    },
+    {
+      src: process.env.PUBLIC_URL + "/assets/skills/vue.png",
+      alt: "Vue",
+    },
+    {
+      src: process.env.PUBLIC_URL + "/assets/skills/three.png",
+      alt: "Three.js",
+    },
+  ];
 
-  //     handleSlider(count);
+  const backImg = [
+    {
+      src: process.env.PUBLIC_URL + "/assets/skills/django.png",
+      alt: "django",
+    },
+    {
+      src: process.env.PUBLIC_URL + "/assets/skills/python.png",
+      alt: "python",
+    },
+  ];
 
-  //     return () => clearTimeout(interval);
-  //   }, 2000);
-  // });
-
-  // const handleSlider = (count) => {
-  //   if (count === 2) {
-  //     slideRef.current.style.transition = "0.5s ease";
-  //     slideRef.current.style.transform = "translateX(0)";
-  //   } else {
-  //     slideRef.current.transition = "0.5s ease-in-out";
-  //     slideRef.current.style.transform = `translateX(-${200 * count}px)`;
-  //   }
-  // };
+  const toolImg = [
+    {
+      src: process.env.PUBLIC_URL + "/assets/skills/git.png",
+      alt: "git",
+    },
+    {
+      src: process.env.PUBLIC_URL + "/assets/skills/github.png",
+      alt: "github",
+    },
+    {
+      src: process.env.PUBLIC_URL + "/assets/skills/gitlab.png",
+      alt: "gitlab",
+    },
+    {
+      src: process.env.PUBLIC_URL + "/assets/skills/jira.png",
+      alt: "jira",
+    },
+    {
+      src: process.env.PUBLIC_URL + "/assets/skills/slack.jpg",
+      alt: "slack",
+    },
+    {
+      src: process.env.PUBLIC_URL + "/assets/skills/figma.png",
+      alt: "figma",
+    },
+  ];
 
   return (
     <MyProfileContainer>
@@ -111,67 +148,17 @@ const MyProfile = () => {
         <h2 style={{ color: "#FFC686" }}>🛠 Skills </h2>
         <div>
           <h3>Frontend</h3>
-          <FrontSlider slideRef={slideRef} count={count}></FrontSlider>
+          <ImgSlider slideRef={frontImg}></ImgSlider>
         </div>
 
         <div>
           <h3>Backend</h3>
-          <div className="skilllist">
-            <div>
-              <img
-                src={process.env.PUBLIC_URL + "/assets/skills/django.png"}
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                src={process.env.PUBLIC_URL + "/assets/skills/python.png"}
-                alt=""
-              />
-            </div>
-          </div>
+          <ImgSlider slideRef={backImg}></ImgSlider>
         </div>
 
         <div>
           <h3>Tool</h3>
-          <div className="skilllist">
-            <div>
-              <img
-                src={process.env.PUBLIC_URL + "/assets/skills/git.png"}
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                src={process.env.PUBLIC_URL + "/assets/skills/github.png"}
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                src={process.env.PUBLIC_URL + "/assets/skills/gitlab.png"}
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                src={process.env.PUBLIC_URL + "/assets/skills/jira.png"}
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                src={process.env.PUBLIC_URL + "/assets/skills/slack.jpg"}
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                src={process.env.PUBLIC_URL + "/assets/skills/figma.png"}
-                alt=""
-              />
-            </div>
-          </div>
+          <ImgSlider slideRef={toolImg}></ImgSlider>
         </div>
       </div>
 

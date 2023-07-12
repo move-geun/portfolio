@@ -35,7 +35,6 @@ const MainContainer = styled.div`
 const ContextBox = styled.div`
   height: 630px;
   width: 800px;
-  /* margin: 0 auto; */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -43,7 +42,6 @@ const ContextBox = styled.div`
   justify-content: center;
   background-color: black;
   border-radius: 10px;
-  /* opacity: 0; */
   transition: 1s;
 
   .active {

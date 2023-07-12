@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 const SliderContainer = styled.div`
   width: 750px;
-
+  display: flex;
+  justify-content: center;
   .slideWrap {
     display: flex;
     flex-direction: row;

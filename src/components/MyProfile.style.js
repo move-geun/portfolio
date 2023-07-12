@@ -62,12 +62,6 @@ const MyProfileContainer = styled.div`
       height: 100px;
       margin: 0 10px;
     }
-
-    .skilllist {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-    }
   }
 `;
 
