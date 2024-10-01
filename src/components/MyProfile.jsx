@@ -112,6 +112,7 @@ const MyProfile = () => {
       <div className="aboutme">
         <img
           className="profile"
+          rel="preload"
           src={process.env.PUBLIC_URL + "/assets/skills/me.jpg"}
           alt=""
         />

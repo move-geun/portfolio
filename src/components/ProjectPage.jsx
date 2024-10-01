@@ -100,6 +100,7 @@ const ProjectPage = ({ project }) => {
                     arr.push(
                       <img
                         key={i}
+                        rel="preload"
                         className="project-png onsikgo"
                         src={
                           process.env.PUBLIC_URL +
@@ -112,6 +113,7 @@ const ProjectPage = ({ project }) => {
                     arr.push(
                       <img
                         key={i}
+                        rel="preload"
                         className="project-png"
                         src={
                           process.env.PUBLIC_URL +
